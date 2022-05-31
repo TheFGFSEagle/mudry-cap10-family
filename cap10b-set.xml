@@ -28,7 +28,7 @@
 		<description>Cap10B (JSBSim)</description>
 		<author>Flavien BLANC, PAF team</author>
 		<flight-model archive="y">jsb</flight-model>
-		<aero>cap10b-jsbsim</aero>
+		<aero>Systems/cap10b-fdm</aero>
 		
 		<status>production</status>
 		<rating>
