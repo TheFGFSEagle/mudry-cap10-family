@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!--
- cap10b-set.xml  - Cap10B by PAF team  - http://equipe-flightgear.forumactif.com
+ cap10b-set.xml	- Cap10B by PAF team	- http://equipe-flightgear.forumactif.com
 
  Written by Flavien BLANC
- Modified by PAF team  - April 2012
+ Modified by PAF team	- April 2012
 
- Copyright (C) 2011-2012  Flavien BLANC  - http://equipe-flightgear.forumactif.com/u56
- Copyright (C) 2012  Clément DE L'HAMAIDE  - http://equipe-flightgear.forumactif.com/u115
+ Copyright (C) 2011-2012	Flavien BLANC	- http://equipe-flightgear.forumactif.com/u56
+ Copyright (C) 2012	Clément DE L'HAMAIDE	- http://equipe-flightgear.forumactif.com/u115
 
 
  This program is free software; you can redistribute it and/or
@@ -17,7 +16,7 @@
 
  This program is distributed in the hope that it will be useful, but
  WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	See the GNU
  General Public License for more details.
 
  You should have received a copy of the GNU General Public License
@@ -25,145 +24,131 @@
 -->
 
 <PropertyList include="cap10-base.xml">
-
-  <sim>
-
-    <description>Cap10B Copilot (JSBSim)</description>
-    <author>Flavien BLANC, PAF team</author>
-    <flight-model archive="y">null</flight-model>
-    <variant-of>cap10b</variant-of>
-    
-    <model>
-      <path archive="y">Aircraft/Cap10B/Models/cap10b-copilot.xml</path>
-    </model>
-
-    <multiplay>
-      <chat_display>1</chat_display>
-      <generic>
-        <int n="0" type="int">  0 </int>  <!-- RESERVED FOR DUAL CONTROL (Boolean Switch)-->
-        <int n="9" type="int">  0 </int>  <!-- RESERVED FOR DUAL CONTROL (Boolean Light Switch)-->
-        <int n="6" alias="/controls/switches/smoke">0</int> <!-- 6 smoke -->
-        <int n="7">0</int>  <!-- 7 color -->
-
-        <float n="3" alias="/controls/flight/elevator-trim"/>
-        <float n="10" alias="/controls/engines/engine[0]/throttle"/>
-        <float n="11" alias="/controls/engines/engine[0]/mixture"/>
-        <float n="12" alias="/controls/gear/brake-left"/>
-        <float n="13" alias="/controls/gear/brake-right"/>
-        <float n="14" alias="/controls/flight/elevator"/>
-        <float n="15" alias="/controls/flight/rudder"/>
-        <float n="16" alias="/controls/flight/aileron"/>
-
-        <string n="0" type="string"></string> <!-- RESERVED FOR DUAL CONTROL (Analog Switch - TDM)-->
-      </generic>
-    </multiplay>
-
-    <menubar include="Dialogs/cap10b-copilot-menu.xml"/>
-
-    <view n="100">
-      <name>Tail Camera View</name>
-      <type>lookfrom</type>
-      <internal archive="y">true</internal>
-      <config>
-        <from-model type="bool">true</from-model>
-        <from-model-idx type="int">0</from-model-idx>
-        <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
-        <default-field-of-view-deg type="double">30</default-field-of-view-deg>
-        <pitch-offset-deg>-5</pitch-offset-deg>
-        <x-offset-m archive="y"> 0.000 </x-offset-m> <!--Right-->
-        <y-offset-m archive="y"> 1.850 </y-offset-m> <!--Up-->
-        <z-offset-m archive="y"> 4.180 </z-offset-m> <!--Back-->
-      </config>
-    </view>
-
-    <view n="0">
-      <internal archive="y">true</internal>
-      <config>
-        <x-offset-m archive="y"> 0.24 </x-offset-m>	<!-- Right -->
-        <y-offset-m archive="y"> 0.43 </y-offset-m>	<!-- Up    -->
-        <z-offset-m archive="y"> 0.27 </z-offset-m>	<!-- Back  -->
-        <default-field-of-view-deg>60</default-field-of-view-deg>
-        <pitch-offset-deg>-15</pitch-offset-deg>
-      </config>
-    </view>
-
-    <chase-distance-m type="double" archive="y">-30.0</chase-distance-m>
-
-    <view n="1">
-      <config>
-        <target-z-offset-m archive="y" type="double">0</target-z-offset-m>
-      </config>
-    </view>
-
-    <view n="2">
-      <config>
-        <target-z-offset-m archive="y" type="double">0</target-z-offset-m>
-      </config>
-    </view>
-
-    <view n="3">
-      <config>
-        <target-z-offset-m archive="y" type="double">0</target-z-offset-m>
-      </config>
-    </view>
-
-    <view n="4">
-      <config>
-        <target-z-offset-m archive="y" type="double">0</target-z-offset-m>
-      </config>
-    </view>
-
-    <view n="5">
-      <config>
-        <target-z-offset-m archive="y" type="double">0</target-z-offset-m>
-      </config>
-    </view>
-
-    <!--<view n="6">
-      <config>
-        <target-z-offset-m archive="y" type="double">0</target-z-offset-m>
-      </config>
-    </view>-->
-
-    <viewer>
-      <eye>
-        <latitude-deg type="double">0</latitude-deg>
-        <longitude-deg type="double">0</longitude-deg>
-        <altitude-ft type="double">0</altitude-ft>
-        <heading-deg type="double">0</heading-deg>
-        <pitch-deg type="double">0</pitch-deg>
-        <roll-deg type="double">0</roll-deg>
-      </eye>
-      <target>
-        <latitude-deg type="double">0</latitude-deg>
-        <longitude-deg type="double">0</longitude-deg>
-        <altitude-ft type="double">0</altitude-ft>
-        <heading-deg type="double">0</heading-deg>
-        <pitch-deg type="double">0</pitch-deg>
-        <roll-deg type="double">0</roll-deg>
-      </target>
-    </viewer>
-
-  </sim>
-
-  <nasal>
-    <!-- ############################### -->
-    <!-- ######## DUAL CONTROL ######### -->
-    <dual_control_tools>
-      <file>Aircraft/Generic/DualControl/dual-control-tools.nas</file>
-    </dual_control_tools>
-    <aircraft_dual_control>
-      <file>Aircraft/Cap10B/Nasal/cap10b-dual-control.nas</file>
-    </aircraft_dual_control>
-    <dual_control>
-      <file>Aircraft/Generic/DualControl/copilot-dual-control.nas</file>
-    </dual_control>
-    <!-- ######## DUAL CONTROL ######### -->
-    <!-- ############################### -->
-
-    <cap10b>
-      <file>Aircraft/Cap10B/Nasal/cap10b-copilot.nas</file>
-    </cap10b>
-  </nasal>
-
+	<sim>
+		<description>Cap10B Copilot (JSBSim)</description>
+		<author>Flavien BLANC, PAF team</author>
+		<flight-model>null</flight-model>
+		<variant-of>cap10b</variant-of>
+		
+		<model>
+			<path>Aircraft/mudry-cap10-family/Models/cap10b-copilot.xml</path>
+		</model>
+		
+		<multiplay>
+			<chat_display>1</chat_display>
+			<generic>
+				<int n="0" type="int">0</int> <!-- RESERVED FOR DUAL CONTROL (Boolean Switch)-->
+				<int n="9" type="int">0</int> <!-- RESERVED FOR DUAL CONTROL (Boolean Light Switch)-->
+				<int n="6" alias="/controls/switches/smoke">0</int> <!-- 6 smoke -->
+				<int n="7">0</int> <!-- 7 color -->
+				<float n="3" alias="/controls/flight/elevator-trim"/>
+				<float n="10" alias="/controls/engines/engine[0]/throttle"/>
+				<float n="11" alias="/controls/engines/engine[0]/mixture"/>
+				<float n="12" alias="/controls/gear/brake-left"/>
+				<float n="13" alias="/controls/gear/brake-right"/>
+				<float n="14" alias="/controls/flight/elevator"/>
+				<float n="15" alias="/controls/flight/rudder"/>
+				<float n="16" alias="/controls/flight/aileron"/>
+				<string n="0" type="string"></string> <!-- RESERVED FOR DUAL CONTROL (Analog Switch - TDM)-->
+			</generic>
+		</multiplay>
+		
+		<menubar include="Dialogs/cap10b-copilot-menu.xml"/>
+		
+		<view n="0">
+			<internal>true</internal>
+			<config>
+				<x-offset-m>0.24</x-offset-m> <!-- Right -->
+				<y-offset-m>0.43</y-offset-m> <!-- Up-->
+				<z-offset-m>0.27</z-offset-m> <!-- Back -->
+				<default-field-of-view-deg>60</default-field-of-view-deg>
+				<pitch-offset-deg>-15</pitch-offset-deg>
+			</config>
+		</view>
+		<view n="1">
+			<config>
+				<target-z-offset-m type="double">0</target-z-offset-m>
+			</config>
+		</view>
+		<view n="2">
+			<config>
+				<target-z-offset-m type="double">0</target-z-offset-m>
+			</config>
+		</view>
+		<view n="3">
+			<config>
+				<target-z-offset-m type="double">0</target-z-offset-m>
+			</config>
+		</view>
+		<view n="4">
+			<config>
+				<target-z-offset-m type="double">0</target-z-offset-m>
+			</config>
+		</view>
+		<view n="5">
+			<config>
+				<target-z-offset-m type="double">0</target-z-offset-m>
+			</config>
+		</view>
+		<!--<view n="6">
+			<config>
+				<target-z-offset-m type="double">0</target-z-offset-m>
+			</config>
+		</view>-->
+		<view n="100">
+			<name>Tail Camera View</name>
+			<type>lookfrom</type>
+			<internal>true</internal>
+			<config>
+				<from-model type="bool">true</from-model>
+				<from-model-idx type="int">0</from-model-idx>
+				<ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+				<default-field-of-view-deg type="double">30</default-field-of-view-deg>
+				<pitch-offset-deg>-5</pitch-offset-deg>
+				<x-offset-m>0.000</x-offset-m> <!--Right-->
+				<y-offset-m>1.850</y-offset-m> <!--Up-->
+				<z-offset-m>4.180</z-offset-m> <!--Back-->
+			</config>
+		</view>
+		
+		<chase-distance-m type="double">-30.0</chase-distance-m>
+		
+		<viewer>
+			<eye>
+				<latitude-deg type="double">0</latitude-deg>
+				<longitude-deg type="double">0</longitude-deg>
+				<altitude-ft type="double">0</altitude-ft>
+				<heading-deg type="double">0</heading-deg>
+				<pitch-deg type="double">0</pitch-deg>
+				<roll-deg type="double">0</roll-deg>
+			</eye>
+			<target>
+				<latitude-deg type="double">0</latitude-deg>
+				<longitude-deg type="double">0</longitude-deg>
+				<altitude-ft type="double">0</altitude-ft>
+				<heading-deg type="double">0</heading-deg>
+				<pitch-deg type="double">0</pitch-deg>
+				<roll-deg type="double">0</roll-deg>
+			</target>
+		</viewer>
+	</sim>
+	
+	<nasal>
+		<!-- ############################### -->
+		<!-- ######## DUAL CONTROL ######### -->
+		<dual_control_tools>
+			<file>Aircraft/Generic/DualControl/dual-control-tools.nas</file>
+		</dual_control_tools>
+		<aircraft_dual_control>
+			<file>Aircraft/Cap10B/Nasal/cap10b-dual-control.nas</file>
+		</aircraft_dual_control>
+		<dual_control>
+			<file>Aircraft/Generic/DualControl/copilot-dual-control.nas</file>
+		</dual_control>
+		<!-- ######## DUAL CONTROL ######### -->
+		<!-- ############################### -->
+		<cap10b>
+			<file>Aircraft/Cap10B/Nasal/cap10b-copilot.nas</file>
+		</cap10b>
+	</nasal>
 </PropertyList>
