@@ -29,11 +29,11 @@
 		<status>production</status>
 		
 		<startup>
-			<splash-texture>Aircraft/Cap10B/Cap10-splash.png</splash-texture>
+			<splash-texture>Cap10-splash.png</splash-texture>
 		</startup>
 		
 		<sound>
-			<path>Aircraft/Cap10B/Sounds/sound.xml</path>
+			<path>Sounds/sound.xml</path>
 		</sound>
 		
 		<fuel-fraction>0.75</fuel-fraction>
@@ -247,10 +247,10 @@
 	
 	<nasal>
 		<cap10bCommon>
-			<file>Aircraft/Cap10B/Nasal/liveries.nas</file>
-			<file>Aircraft/Cap10B/Nasal/light.nas</file>
-			<file>Aircraft/Cap10B/Nasal/electrical.nas</file>
-			<file>Aircraft/Cap10B/Nasal/interpolate.nas</file>
+			<file>Nasal/liveries.nas</file>
+			<file>Nasal/light.nas</file>
+			<file>Nasal/electrical.nas</file>
+			<file>Nasal/interpolate.nas</file>
 		</cap10bCommon>
 		
 		<garmin196>

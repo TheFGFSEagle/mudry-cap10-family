@@ -54,7 +54,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>Aircraft/Cap10B/Models/Effects/glass_shader.png</texture>
+    <texture>Models/Effects/glass_shader.png</texture>
     <object-name>VitreInt</object-name>
     <object-name>VerriereInt</object-name>
   </animation>
@@ -141,7 +141,7 @@
 
   <!-- Pilote -->
   <model>
-    <path>Aircraft/Cap10B/Models/Pilot/pilot.xml</path>
+    <path>Models/Pilot/pilot.xml</path>
     <offsets>
       <x-m> -0.01 </x-m>
       <y-m> -0.28 </y-m>
@@ -151,7 +151,7 @@
 
   <!-- Planche de bord -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/panel.xml</path>
+    <path>Models/Interior/Panel/panel.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>  
       <y-m>  0.000 </y-m>  
@@ -160,7 +160,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Seats/sieges.xml</path>
+    <path>Models/Interior/Seats/sieges.xml</path>
     <offsets>
       <x-m>  0.2898 </x-m>
       <y-m>  0.000 </y-m>  
@@ -170,7 +170,7 @@
 
 
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Handle/handle.xml</path>
+    <path>Models/Interior/Handle/handle.xml</path>
     <offsets>
       <x-m> -0.211 </x-m>
       <y-m>  0.000 </y-m>  
@@ -179,7 +179,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Palonnier/palonnier.xml</path>
+    <path>Models/Interior/Palonnier/palonnier.xml</path>
     <offsets>
       <x-m> -0.580 </x-m>
       <y-m>  0.000 </y-m>  
@@ -188,7 +188,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Flaps/flaps.xml</path>
+    <path>Models/Interior/Panel/Instruments/Flaps/flaps.xml</path>
     <offsets>
       <x-m>  0.380 </x-m>
       <y-m>  0.000 </y-m>  

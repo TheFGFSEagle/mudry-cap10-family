@@ -140,7 +140,7 @@
 			<file>Aircraft/Generic/DualControl/dual-control-tools.nas</file>
 		</dual_control_tools>
 		<aircraft_dual_control>
-			<file>Aircraft/Cap10B/Nasal/cap10b-dual-control.nas</file>
+			<file>Aircraft/mudry-cap10-family/Nasal/cap10b-dual-control.nas</file>
 		</aircraft_dual_control>
 		<dual_control>
 			<file>Aircraft/Generic/DualControl/copilot-dual-control.nas</file>
@@ -148,7 +148,7 @@
 		<!-- ######## DUAL CONTROL ######### -->
 		<!-- ############################### -->
 		<cap10b>
-			<file>Aircraft/Cap10B/Nasal/cap10b-copilot.nas</file>
+			<file>Aircraft/mudry-cap10-family/Nasal/cap10b-copilot.nas</file>
 		</cap10b>
 	</nasal>
 </PropertyList>

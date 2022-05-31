@@ -30,7 +30,7 @@
 
     <crank>
       <name>engstart</name>
-      <path>Aircraft/Cap10B/Sounds/Cap10B_starter_1.wav</path>
+      <path>Sounds/Cap10B_starter_1.wav</path>
       <property>engines/engine/cranking</property>
       <volume>
         <offset>-0.6</offset>
@@ -39,7 +39,7 @@
     <crank>
       <name>crank</name>
       <mode>looped</mode>
-      <path>Aircraft/Cap10B/Sounds/Cap10B_starter_1.wav</path>
+      <path>Sounds/Cap10B_starter_1.wav</path>
       <condition>
         <property>engines/engine/cranking</property>
         <not>
@@ -52,7 +52,7 @@
     </crank>
     <crank>
       <name>cough</name>
-      <path>Aircraft/Cap10B/Sounds/Cap10B_lancement.wav</path>
+      <path>Sounds/Cap10B_lancement.wav</path>
       <property>engines/engine/running</property>
 	 <volume>
         <offset>0.2</offset>
@@ -62,7 +62,7 @@
     <engine>
       <name>engine</name>
       <mode>looped</mode>
-      <path>Aircraft/Cap10B/Sounds/Cap10B_croisiere1_OUT.wav</path>
+      <path>Sounds/Cap10B_croisiere1_OUT.wav</path>
       <condition>
         <and>
           <greater-than>
@@ -98,7 +98,7 @@
     <engine-internal>
       <name>engine-internal</name>
       <mode>looped</mode>
-      <path>Aircraft/Cap10B/Sounds/Cap10B_croisiere1_INT.wav</path>
+      <path>Sounds/Cap10B_croisiere1_INT.wav</path>
       <condition>
         <and>
           <greater-than>
@@ -127,7 +127,7 @@
     <propeller>
       <name>propeller</name>
       <mode>looped</mode>
-      <path>Aircraft/Cap10B/Sounds/Cap10B_fond1.wav</path>
+      <path>Sounds/Cap10B_fond1.wav</path>
       <condition>
         <greater-than>
           <property>engines/engine/rpm</property>
@@ -154,7 +154,7 @@
 
     <stop>
        <name>stop</name>
-        <path>Aircraft/Cap10B/Sounds/Cap10B-shutdown.wav</path>
+        <path>Sounds/Cap10B-shutdown.wav</path>
     <condition>
       <not>
             <property>/engines/engine/running</property>
@@ -177,7 +177,7 @@
     <rumble>
       <name>rumble</name>
       <mode>looped</mode>
-      <path>Aircraft/Cap10B/Sounds/Cap10B_roulage.wav</path>
+      <path>Sounds/Cap10B_roulage.wav</path>
       <condition>
         <and>
           <or>
@@ -210,7 +210,7 @@
 
     <freinage>
       <name>freinage</name>
-      <path>Aircraft/Cap10B/Sounds/Cap10B_freinage.wav</path>
+      <path>Sounds/Cap10B_freinage.wav</path>
       <condition>
         <or>
           <property>gear/gear[0]/wow</property>
@@ -243,7 +243,7 @@
 
 <click>
       <name>Flap0</name>
-      <path>Aircraft/Cap10B/Sounds/Cap10B_volets.wav</path>
+      <path>Sounds/Cap10B_volets.wav</path>
       <condition>
           <equals>
             <property>controls/flight/flaps</property>
@@ -257,7 +257,7 @@
  
     <click>
       <name>Flap1</name>
-      <path>Aircraft/Cap10B/Sounds/Cap10B_volets.wav</path>
+      <path>Sounds/Cap10B_volets.wav</path>
       <condition>
           <equals>
             <property>controls/flight/flaps</property>
@@ -271,7 +271,7 @@
  
     <click>
       <name>Flap2</name>
-      <path>Aircraft/Cap10B/Sounds/Cap10B_volets.wav</path>
+      <path>Sounds/Cap10B_volets.wav</path>
       <condition>
           <equals>
             <property>controls/flight/flaps</property>
@@ -287,7 +287,7 @@
      <pump>
       <name>Pompe fuel</name>
       <mode>looped</mode>
-      <path>Aircraft/Cap10B/Sounds/Cap10B_pompe_fuel.wav</path>
+      <path>Sounds/Cap10B_pompe_fuel.wav</path>
        <condition>
           <property>systems/electrical/outputs/fuel-pump</property>
           <value>24</value> 
@@ -302,7 +302,7 @@
     <alarme>
       <name>alarme</name>
       <mode>looped</mode>
-      <path>Aircraft/Cap10B/Sounds/Cap10B_alarme.wav</path>
+      <path>Sounds/Cap10B_alarme.wav</path>
       <condition>
         <and>
           <property>controls/electric/battery-switch</property>
@@ -324,7 +324,7 @@
     <vent>
       <name>vent</name>
       <mode>looped</mode>
-      <path>Aircraft/Cap10B/Sounds/Cap10B_vent.wav</path>
+      <path>Sounds/Cap10B_vent.wav</path>
       <property>velocities/airspeed-kt</property>
       <volume>
         <property>velocities/airspeed-kt</property>
@@ -340,7 +340,7 @@
     <!--                  Toggle Switches                  -->
     <click>
       <name>Clickon</name>
-      <path>Aircraft/Cap10B/Sounds/click.wav</path>
+      <path>Sounds/click.wav</path>
       <condition>
         <property>sim/model/click</property>
       </condition>
@@ -351,7 +351,7 @@
 
     <click>
       <name>Clickoff</name>
-      <path>Aircraft/Cap10B/Sounds/click.wav</path>
+      <path>Sounds/click.wav</path>
       <condition>
         <not><property>sim/model/click</property></not>
       </condition>
@@ -362,7 +362,7 @@
 
     <squish>
       <name>Primer Out</name>
-      <path>Aircraft/Cap10B/Sounds/Cap10B_freinage.wav</path>
+      <path>Sounds/Cap10B_freinage.wav</path>
       <condition>
         <property>controls/engines/engine/primer-pump</property>
       </condition>
@@ -373,7 +373,7 @@
 
     <squish>
       <name>Primer In</name>
-      <path>Aircraft/Cap10B/Sounds/Cap10B_freinage.wav</path>
+      <path>Sounds/Cap10B_freinage.wav</path>
       <condition>
         <not>
           <property>controls/engines/engine/primer-pump</property>

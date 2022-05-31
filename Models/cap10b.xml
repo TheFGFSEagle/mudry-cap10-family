@@ -30,7 +30,7 @@
 
   <nasal>
     <load>
-      var livery_update = aircraft.livery_update.new("Aircraft/Cap10B/Models/Liveries", 10);
+      var livery_update = aircraft.livery_update.new("Aircraft/mudry-cap10-family/Models/Liveries", 10);
 
 
 
@@ -139,7 +139,7 @@
   </animation>
   
   <effect>
-    <inherits-from>Aircraft/Cap10B/Models/Effects/cap10-effects</inherits-from>
+    <inherits-from>Models/Effects/cap10-effects</inherits-from>
     <object-name>fuselage</object-name>
     <object-name>cone</object-name>
     <object-name>ailes</object-name>
@@ -175,7 +175,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>Aircraft/Cap10B/Models/Effects/glass_shader.png</texture>
+    <texture>Models/Effects/glass_shader.png</texture>
     <object-name>vitre</object-name>
     <object-name>verriere</object-name>
   </animation>
@@ -186,21 +186,9 @@
     <object-name>verriere</object-name>
   </animation>
 
- <!--model>
-        <name>shadow</name>
-        <path>Aircraft/Cap10B/Models/shadow.xml</path>
-        <offsets>
-            <x-m>0</x-m>
-            <y-m>0</y-m>
-            <z-m>0.05</z-m>
-            <pitch-deg>0</pitch-deg>
-        </offsets>
-    </model-->
-
-
   <!-- Effet de touché -->
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/wing-left.xml</path>
+    <path>Models/Effects/Spark/wing-left.xml</path>
     <offsets>
       <x-m>  0.064 </x-m>
       <y-m> -3.932 </y-m>
@@ -209,7 +197,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/wing-right.xml</path>
+    <path>Models/Effects/Spark/wing-right.xml</path>
     <offsets>
       <x-m>  0.064 </x-m>
       <y-m>  3.932 </y-m>
@@ -218,7 +206,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/before-tail.xml</path>
+    <path>Models/Effects/Spark/before-tail.xml</path>
     <offsets>
       <x-m>  3.7338 </x-m>
       <y-m>  0.0000 </y-m>
@@ -227,7 +215,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/after-tail.xml</path>
+    <path>Models/Effects/Spark/after-tail.xml</path>
     <offsets>
       <x-m>  3.9924 </x-m>
       <y-m>  0.0000 </y-m>
@@ -236,7 +224,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/fuselage-rear-center.xml</path>
+    <path>Models/Effects/Spark/fuselage-rear-center.xml</path>
     <offsets>
       <x-m>  1.2007 </x-m>
       <y-m>  0.0000 </y-m>
@@ -245,7 +233,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/egt-left.xml</path>
+    <path>Models/Effects/Spark/egt-left.xml</path>
     <offsets>
       <x-m>  -1.0162 </x-m>
       <y-m>  -0.1859 </y-m>
@@ -254,7 +242,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/egt-right.xml</path>
+    <path>Models/Effects/Spark/egt-right.xml</path>
     <offsets>
       <x-m>  -1.0162 </x-m>
       <y-m>   0.1859 </y-m>
@@ -263,7 +251,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/fuselage-center.xml</path>
+    <path>Models/Effects/Spark/fuselage-center.xml</path>
     <offsets>
       <x-m>  -0.5482 </x-m>
       <y-m>   0.0000 </y-m>
@@ -272,7 +260,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/fuselage-left.xml</path>
+    <path>Models/Effects/Spark/fuselage-left.xml</path>
     <offsets>
       <x-m>  -0.5492 </x-m>
       <y-m>  -0.4630 </y-m>
@@ -281,7 +269,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/fuselage-right.xml</path>
+    <path>Models/Effects/Spark/fuselage-right.xml</path>
     <offsets>
       <x-m>  -0.5492 </x-m>
       <y-m>   0.4630 </y-m>
@@ -290,7 +278,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/wing0-left.xml</path>
+    <path>Models/Effects/Spark/wing0-left.xml</path>
     <offsets>
       <x-m>  -0.4159 </x-m>
       <y-m>  -0.5122 </y-m>
@@ -299,7 +287,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/wing0-right.xml</path>
+    <path>Models/Effects/Spark/wing0-right.xml</path>
     <offsets>
       <x-m>  -0.4159 </x-m>
       <y-m>   0.5122 </y-m>
@@ -308,7 +296,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/wing1-left.xml</path>
+    <path>Models/Effects/Spark/wing1-left.xml</path>
     <offsets>
       <x-m>  -0.05624 </x-m>
       <y-m>  -0.9858 </y-m>
@@ -317,7 +305,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/wing1-right.xml</path>
+    <path>Models/Effects/Spark/wing1-right.xml</path>
     <offsets>
       <x-m>  -0.05624 </x-m>
       <y-m>   0.9858 </y-m>
@@ -326,7 +314,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/wing2-left.xml</path>
+    <path>Models/Effects/Spark/wing2-left.xml</path>
     <offsets>
       <x-m>  -0.05624 </x-m>
       <y-m>  -1.8681 </y-m>
@@ -335,7 +323,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/wing2-right.xml</path>
+    <path>Models/Effects/Spark/wing2-right.xml</path>
     <offsets>
       <x-m>  -0.05624 </x-m>
       <y-m>   1.8681 </y-m>
@@ -344,7 +332,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/poids-left.xml</path>
+    <path>Models/Effects/Spark/poids-left.xml</path>
     <offsets>
      <x-m>   0.4684 </x-m>
      <y-m>  -3.5505 </y-m>
@@ -353,7 +341,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/poids-right.xml</path>
+    <path>Models/Effects/Spark/poids-right.xml</path>
     <offsets>
      <x-m>   0.4684 </x-m>
      <y-m>   3.5505 </y-m>
@@ -362,7 +350,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/fuselage-front-center.xml</path>
+    <path>Models/Effects/Spark/fuselage-front-center.xml</path>
     <offsets>
       <x-m>  -1.4112 </x-m>
       <y-m>   0.0000 </y-m>
@@ -371,7 +359,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/fuselage-front-left.xml</path>
+    <path>Models/Effects/Spark/fuselage-front-left.xml</path>
     <offsets>
      <x-m>  -1.4112 </x-m>
      <y-m>  -0.4214 </y-m>
@@ -380,7 +368,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/fuselage-front-right.xml</path>
+    <path>Models/Effects/Spark/fuselage-front-right.xml</path>
     <offsets>
      <x-m>  -1.4112 </x-m>
      <y-m>   0.4214 </y-m>
@@ -389,7 +377,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/elevator-left.xml</path>
+    <path>Models/Effects/Spark/elevator-left.xml</path>
     <offsets>
      <x-m>  3.4767 </x-m>
      <y-m> -1.2955 </y-m>
@@ -398,7 +386,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Spark/elevator-right.xml</path>
+    <path>Models/Effects/Spark/elevator-right.xml</path>
     <offsets>
      <x-m>  3.4767 </x-m>
      <y-m>  1.2955 </y-m>
@@ -408,7 +396,7 @@
 
   <!-- Particules pour OSG -->
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Smoke/smoke.xml</path>
+    <path>Models/Effects/Smoke/smoke.xml</path>
     <offsets>
       <x-m> -0.150 </x-m>
       <y-m>  0.000 </y-m>
@@ -422,7 +410,7 @@
   <!-- Cranking effects -->
   <!-- Left -->
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Cranking/cranking.xml</path>
+    <path>Models/Effects/Cranking/cranking.xml</path>
     <offsets>
       <x-m> -1.099 </x-m>
       <y-m> -0.190 </y-m>
@@ -435,7 +423,7 @@
 
   <!-- Right -->
   <model>
-    <path>Aircraft/Cap10B/Models/Effects/Cranking/cranking.xml</path>
+    <path>Models/Effects/Cranking/cranking.xml</path>
     <offsets>
       <x-m> -1.099 </x-m>
       <y-m>  0.163 </y-m>
@@ -449,7 +437,7 @@
 
   <!-- Interior -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/interior.xml</path>
+    <path>Models/Interior/interior.xml</path>
     <usage>interior</usage>
   </model>
   
@@ -771,7 +759,7 @@
 
   <!-- Ajout des effets lumineux -->
   <model>
-    <path>Aircraft/Cap10B/Models/Lights/NavLightL.xml</path>
+    <path>Models/Lights/NavLightL.xml</path>
     <condition>
       <not><property>/sim/rendering/rembrandt/enabled</property></not>
     </condition>
@@ -786,7 +774,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Lights/NavLightL-rembrandt.xml</path>
+    <path>Models/Lights/NavLightL-rembrandt.xml</path>
     <condition>
       <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
@@ -802,7 +790,7 @@
 
   <!--stobe-light left -->
   <model>
-    <path>Aircraft/Cap10B/Models/Lights/StrobeLight.xml</path>
+    <path>Models/Lights/StrobeLight.xml</path>
     <condition>
       <not><property>/sim/rendering/rembrandt/enabled</property></not>
     </condition>
@@ -817,7 +805,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Lights/StrobeLight-rembrandt.xml</path>
+    <path>Models/Lights/StrobeLight-rembrandt.xml</path>
     <condition>
       <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
@@ -832,7 +820,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Lights/NavLightR.xml</path>
+    <path>Models/Lights/NavLightR.xml</path>
     <condition>
       <not><property>/sim/rendering/rembrandt/enabled</property></not>
     </condition>
@@ -847,7 +835,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Lights/NavLightR-rembrandt.xml</path>
+    <path>Models/Lights/NavLightR-rembrandt.xml</path>
     <condition>
       <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
@@ -863,7 +851,7 @@
 
   <!--stobe-light right -->
   <model>
-    <path>Aircraft/Cap10B/Models/Lights/StrobeLight.xml</path>
+    <path>Models/Lights/StrobeLight.xml</path>
     <condition>
       <not><property>/sim/rendering/rembrandt/enabled</property></not>
     </condition>
@@ -878,7 +866,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Lights/StrobeLight-rembrandt.xml</path>
+    <path>Models/Lights/StrobeLight-rembrandt.xml</path>
     <condition>
       <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
@@ -894,7 +882,7 @@
 
   <!--stobe-light tail -->
   <model>
-    <path>Aircraft/Cap10B/Models/Lights/StrobeLight.xml</path>
+    <path>Models/Lights/StrobeLight.xml</path>
     <condition>
       <not><property>/sim/rendering/rembrandt/enabled</property></not>
     </condition>
@@ -909,7 +897,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Lights/StrobeLight-rembrandt.xml</path>
+    <path>Models/Lights/StrobeLight-rembrandt.xml</path>
     <condition>
       <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
@@ -924,7 +912,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Lights/LandingLight.xml</path>
+    <path>Models/Lights/LandingLight.xml</path>
     <condition>
       <not><property>/sim/rendering/rembrandt/enabled</property></not>
     </condition>
@@ -939,7 +927,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cap10B/Models/Lights/LandingLight-rembrandt.xml</path>
+    <path>Models/Lights/LandingLight-rembrandt.xml</path>
     <condition>
       <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
