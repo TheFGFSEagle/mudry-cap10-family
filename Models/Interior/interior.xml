@@ -83,24 +83,7 @@
     </axis>
   </animation>
 
-  <!-- Throttle pilot -->
-  <animation>
-    <type>rotate</type>
-    <object-name>throttle</object-name>
-    <property>controls/engines/engine[0]/throttle</property>
-    <factor>40</factor>
-    <center>
-      <x-m> -0.220 </x-m>
-      <y-m> -0.549 </y-m>
-      <z-m> -0.071 </z-m>
-    </center>
-    <axis>
-      <x>  0 </x>
-      <y> -1 </y>
-      <z>  0 </z>
-    </axis>
-  </animation>
-
+  <!-- Throttle-->
   <animation>
     <type>translate</type>
     <object-name>bielle_throttle</object-name>
@@ -114,28 +97,28 @@
   </animation>
 
   <animation>
-    <type>pick</type>
+    <type>knob</type>
     <object-name>throttle</object-name>
+    <property>controls/engines/engine[0]/throttle</property>
+    <factor>40</factor>
+    <center>
+      <x-m> -0.220 </x-m>
+      <y-m> -0.549 </y-m>
+      <z-m> -0.071 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
     <action>
-      <button>0</button>
-      <repeatable>true</repeatable>
-      <interval-sec>0.05</interval-sec>
       <binding>
-        <command>property-assign</command>
-        <property>controls/throttle-coupled</property>
-        <value>0</value>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[0]/throttle</property>
+        <factor>0.01</factor>
+        <min>0</min>
+        <max>1</max>
       </binding>
-      <binding>
-        <command>nasal</command>
-        <script>cap10b.set_levers("throttle",0,-1,1);</script>
-      </binding>
-      <mod-up>
-        <binding>
-          <command>property-assign</command>
-          <property>controls/throttle-coupled</property>
-          <value>1</value>
-        </binding>
-      </mod-up>
     </action>
   </animation>
 

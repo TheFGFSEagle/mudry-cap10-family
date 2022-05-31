@@ -112,9 +112,6 @@
 			<brake-parking type="bool">1</brake-parking>
 			<brake-parking-pos type="double">1.0</brake-parking-pos>
 		</gear>
-		<throttle-coupled type="bool">1</throttle-coupled>
-		<mixture-coupled type="bool">1</mixture-coupled>
-		<prop-coupled type="bool">1</prop-coupled>
 		<movement-scale type="double">0.025</movement-scale>
 		<engines>
 			<engine n="0">

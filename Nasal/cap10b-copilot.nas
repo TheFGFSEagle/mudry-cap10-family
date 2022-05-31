@@ -43,51 +43,6 @@ var timeFormat = func{
 }
 
 ##########################################
-# Mixture/Throttle controlled by mouse
-##########################################
-
-var mousex =0;
-var msx = 0;
-var msxa = 0;
-var mousey = 0;
-var msy = 0;
-var msya=0;
-
-var mouse_accel=func{
-  msx=getprop("devices/status/mice/mouse/x") or 0;
-  mousex=msx-msxa;
-  mousex*=0.5;
-  msxa=msx;
-  msy=getprop("devices/status/mice/mouse/y") or 0;
-  mousey=msya-msy;
-  mousey*=0.5;
-  msya=msy;
-#  settimer(mouse_accel, 0);
-}
-
-var set_levers = func(type,num,min,max){
-  var ctrl=[];
-  var cpld=-1;
-  if(type == "throttle"){
-    ctrl = ["controls/engines/engine[0]/throttle","controls/engines/engine[1]/throttle"];
-    cpld = "controls/throttle-coupled";
-  }elsif(type == "prop"){
-    ctrl = ["controls/engines/engine[0]/propeller-pitch","controls/engines/engine[1]/propeller-pitch"];
-    cpld = "controls/prop-coupled";
-  }elsif(type == "mixture"){
-    ctrl = ["controls/engines/engine[0]/mixture","controls/engines/engine[1]/mixture"];
-    cpld ="controls/mixture-coupled";
-  }
-
-  var amnt =mousey* getprop("controls/movement-scale");
-  var ttl = getprop(ctrl[num]) + amnt;
-  if(ttl > max) ttl = max;
-  if(ttl<min)ttl=min;
-  setprop(ctrl[num],ttl);
-  if(getprop(cpld))setprop(ctrl[1-num],ttl);
-}
-
-##########################################
 # Ground Detection
 ##########################################
 
