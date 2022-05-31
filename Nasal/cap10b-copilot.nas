@@ -251,7 +251,7 @@ setlistener("/sim/signals/fdm-initialized", func{
   setprop("/controls/lighting/nav-lights", 0);
   setprop("/controls/lighting/landing-lights", 0);
   setprop("/controls/electric/battery-switch", 0);
-  setprop("/instrumentation/ertical-speed-indicator/indicated-speed-fpm", 0);
+  setprop("/instrumentation/vertical-speed-indicator/indicated-speed-fpm", 0);
 
   if(getprop("sim/rendering/rembrandt/enabled") == nil){
     props.globals.initNode("sim/rendering/rembrandt/enabled", 0, "BOOL");

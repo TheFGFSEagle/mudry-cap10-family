@@ -1,3 +1,3 @@
-aircraft.livery.init("Aircraft/Cap10B/Models/Liveries");
+aircraft.livery.init("Aircraft/mudry-cap10-family/Models/Liveries");
 
 
