@@ -25,7 +25,7 @@ Ensemble à revoir
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>Aircraft/Cap10B/Models/Effects/glass_shader.png</texture>
+    <texture>Aircraft/mudry-cap10-family/Models/Effects/glass_shader.png</texture>
     <object-name>MANvitre</object-name>
   </animation>
  

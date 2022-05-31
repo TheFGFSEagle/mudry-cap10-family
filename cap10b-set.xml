@@ -48,7 +48,7 @@
 				<int n="0" type="int">0</int>	<!-- RESERVED FOR DUAL CONTROL (Boolean Switch)-->
 				<int n="9" type="int">0</int>	<!-- RESERVED FOR DUAL CONTROL (Boolean Light Switch)-->
 				<int n="6" alias="/controls/switches/smoke">0</int> <!-- 6 smoke -->
-				<int n="7">0</int> <!-- 7 color -->
+				<int n="7" alias="/controls/switches/smoke-color">0</int> <!-- 7 color -->
 				<int n="9" alias="/engines/engine[0]/rpm"/>
 				<int n="10" alias="/sim/model/lights/nav-lights/state"/>
 				<int n="11" alias="/sim/model/lights/landing-lights/state"/>
@@ -164,7 +164,7 @@
 			<file>Aircraft/Generic/DualControl/dual-control-tools.nas</file>
 		</dual_control_tools>
 		<aircraft_dual_control>
-			<file>Aircraft/mudry-cap10-family/Nasal/cap10b-dual-control.nas</file>
+			<file>Nasal/cap10b-dual-control.nas</file>
 		</aircraft_dual_control>
 		<dual_control>
 			<file>Aircraft/Generic/DualControl/pilot-dual-control.nas</file>
@@ -172,8 +172,8 @@
 		<!-- ######## DUAL CONTROL ######### -->
 		<!-- ############################### -->
 		<cap10b>
-			<file>Aircraft/mudry-cap10-family/Nasal/physics.nas</file>
-			<file>Aircraft/mudry-cap10-family/Nasal/cap10b.nas</file>
+			<file>Nasal/physics.nas</file>
+			<file>Nasal/cap10b.nas</file>
 		</cap10b>
 	</nasal>
 </PropertyList>

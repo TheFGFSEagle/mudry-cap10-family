@@ -62,7 +62,7 @@
   
   <!-- badin -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Badin/badin.xml</path>
+    <path>Models/Interior/Panel/Instruments/Badin/badin.xml</path>
     <offsets>
       <x-m> -0.309 </x-m>
       <y-m> -0.313 </y-m>
@@ -72,7 +72,7 @@
   
     <!-- tachymetre -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Tachymetre/tachymetre.xml</path>
+    <path>Models/Interior/Panel/Instruments/Tachymetre/tachymetre.xml</path>
     <offsets>
       <x-m> -0.299 </x-m>
       <y-m> -0.419 </y-m>
@@ -82,7 +82,7 @@
 
     <!-- bille -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Bille/bille.xml</path>
+    <path>Models/Interior/Panel/Instruments/Bille/bille.xml</path>
     <offsets>
       <x-m> -0.292 </x-m>
       <y-m> -0.222 </y-m>
@@ -92,7 +92,7 @@
 
 <!-- bille dos -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Bille/bille_dos.xml</path>
+    <path>Models/Interior/Panel/Instruments/Bille/bille_dos.xml</path>
     <offsets>
       <x-m> -0.297 </x-m>
       <y-m> -0.222 </y-m>
@@ -102,7 +102,7 @@
   
     <!-- altimetre -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Altimetre/altimetre.xml</path>
+    <path>Models/Interior/Panel/Instruments/Altimetre/altimetre.xml</path>
     <offsets>
       <x-m> -0.309 </x-m>
       <y-m> -0.312 </y-m>
@@ -112,7 +112,7 @@
 
     <!-- VOR -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/VOR/VOR.xml</path>
+    <path>Models/Interior/Panel/Instruments/VOR/VOR.xml</path>
     <offsets>
       <x-m> -0.214 </x-m>
       <y-m>  0.2445 </y-m>
@@ -122,7 +122,7 @@
 
     <!-- variometre -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Variometre/variometre.xml</path>
+    <path>Models/Interior/Panel/Instruments/Variometre/variometre.xml</path>
     <offsets>
       <x-m> -0.3079 </x-m>
       <y-m> -0.132 </y-m>
@@ -132,7 +132,7 @@
 
     <!-- Horizon artificiel -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/AI/ai.xml</path>
+    <path>Models/Interior/Panel/Instruments/AI/ai.xml</path>
     <offsets>
       <x-m> -0.291 </x-m>
       <y-m> -0.1335 </y-m>
@@ -142,7 +142,7 @@
 
     <!-- Conservateur de Cap -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/hdg/hdg.xml</path>
+    <path>Models/Interior/Panel/Instruments/hdg/hdg.xml</path>
     <offsets>
       <x-m> -0.291 </x-m>
       <y-m> -0.4169 </y-m>
@@ -152,7 +152,7 @@
 
   <!--jauge fuel gauche -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Fuel/fuel_left.xml</path>
+    <path>Models/Interior/Panel/Instruments/Fuel/fuel_left.xml</path>
     <offsets>
       <x-m> -0.291 </x-m>
       <y-m>  0.043 </y-m>
@@ -162,7 +162,7 @@
 
   <!--jauge fuel droite -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Fuel/fuel_right.xml</path>
+    <path>Models/Interior/Panel/Instruments/Fuel/fuel_right.xml</path>
     <offsets>
       <x-m> -0.291 </x-m>
       <y-m>  0.124 </y-m>
@@ -172,7 +172,7 @@
 
   <!--oil-temp -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/oil-temp/oil-temp.xml</path>
+    <path>Models/Interior/Panel/Instruments/oil-temp/oil-temp.xml</path>
     <offsets>
       <x-m> -0.291 </x-m>
       <y-m> -0.043 </y-m>
@@ -182,7 +182,7 @@
 
   <!--oil-press -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/oil-press/oil-press.xml</path>
+    <path>Models/Interior/Panel/Instruments/oil-press/oil-press.xml</path>
     <offsets>
       <x-m> -0.291 </x-m>
       <y-m> -0.0435 </y-m>
@@ -192,7 +192,7 @@
 
   <!--Battery -->
   <!--<model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/oil-press/oil-press.xml</path>
+    <path>Models/Interior/Panel/Instruments/oil-press/oil-press.xml</path>
     <offsets>
       <x-m> -0.291 </x-m>
       <y-m>  0.045 </y-m>
@@ -202,7 +202,7 @@
 
   <!--forceG -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/ForceG/forceG.xml</path>
+    <path>Models/Interior/Panel/Instruments/ForceG/forceG.xml</path>
     <offsets>
       <x-m> -0.291 </x-m>
       <y-m>  0.124 </y-m>
@@ -212,7 +212,7 @@
 
   <!-- magnetos -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Magnetos/magnetos.xml</path>
+    <path>Models/Interior/Panel/Instruments/Magnetos/magnetos.xml</path>
     <offsets>
       <x-m> -0.2939 </x-m>
       <y-m>  0.000227 </y-m>
@@ -232,7 +232,7 @@
 
   <!-- battery-switch -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/switch/battery-switch.xml</path>
+    <path>Models/Interior/Panel/Instruments/switch/battery-switch.xml</path>
     <offsets>
       <x-m> -0.2910 </x-m>
       <y-m> -0.4510 </y-m>
@@ -242,7 +242,7 @@
 
   <!-- battery-lamp -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/lamp/battery-lamp.xml</path>
+    <path>Models/Interior/Panel/Instruments/lamp/battery-lamp.xml</path>
     <offsets>
       <x-m> -0.2910 </x-m>
       <y-m> -0.4277 </y-m>
@@ -252,7 +252,7 @@
 
   <!-- nav-switch -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/switch/nav-lights-switch.xml</path>
+    <path>Models/Interior/Panel/Instruments/switch/nav-lights-switch.xml</path>
     <offsets>
       <x-m> -0.2910 </x-m>
       <y-m> -0.3131 </y-m>
@@ -262,7 +262,7 @@
 
   <!-- landing-switch -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/switch/landing-lights-switch.xml</path>
+    <path>Models/Interior/Panel/Instruments/switch/landing-lights-switch.xml</path>
     <offsets>
       <x-m> -0.2910 </x-m>
       <y-m> -0.2034 </y-m>
@@ -272,7 +272,7 @@
 
   <!-- smoke-switch -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/switch/smoke-switch.xml</path>
+    <path>Models/Interior/Panel/Instruments/switch/smoke-switch.xml</path>
     <offsets>
       <x-m> -0.2910 </x-m>
       <y-m>  0.2099 </y-m>
@@ -282,7 +282,7 @@
 
   <!-- fuel-pump-switch -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/switch/fuel-pump-switch.xml</path>
+    <path>Models/Interior/Panel/Instruments/switch/fuel-pump-switch.xml</path>
     <offsets>
       <x-m> -0.2910 </x-m>
       <y-m> -0.2631 </y-m>
@@ -292,7 +292,7 @@
 
   <!-- fuel-pump-lamp -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/lamp/fuel-pump-lamp.xml</path>
+    <path>Models/Interior/Panel/Instruments/lamp/fuel-pump-lamp.xml</path>
     <offsets>
       <x-m> -0.2910 </x-m>
       <y-m> -0.2423 </y-m>
@@ -302,7 +302,7 @@
 
   <!-- ai-switch -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/switch/ai-switch.xml</path>
+    <path>Models/Interior/Panel/Instruments/switch/ai-switch.xml</path>
     <offsets>
       <x-m> -0.2910 </x-m>
       <y-m> -0.1476 </y-m>
@@ -312,7 +312,7 @@
 
   <!-- hi-switch -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/switch/hi-switch.xml</path>
+    <path>Models/Interior/Panel/Instruments/switch/hi-switch.xml</path>
     <offsets>
       <x-m> -0.2910 </x-m>
       <y-m> -0.1162 </y-m>
@@ -322,7 +322,7 @@
 
   <!-- pitot-heat-switch -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/switch/pitot-heat-switch.xml</path>
+    <path>Models/Interior/Panel/Instruments/switch/pitot-heat-switch.xml</path>
     <offsets>
       <x-m> -0.2910 </x-m>
       <y-m> -0.08617 </y-m>
@@ -332,7 +332,7 @@
 
   <!-- pitot-heat-lamp -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/lamp/pitot-heat-lamp.xml</path>
+    <path>Models/Interior/Panel/Instruments/lamp/pitot-heat-lamp.xml</path>
     <offsets>
       <x-m> -0.2910 </x-m>
       <y-m> -0.06053 </y-m>
@@ -342,7 +342,7 @@
 
   <!-- rotating-lamp -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/lamp/rotating-lamp.xml</path>
+    <path>Models/Interior/Panel/Instruments/lamp/rotating-lamp.xml</path>
     <offsets>
       <x-m> -0.2910 </x-m>
       <y-m>  0.04635 </y-m>
@@ -352,7 +352,7 @@
 
   <!-- rotating-switch -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/switch/rotating-switch.xml</path>
+    <path>Models/Interior/Panel/Instruments/switch/rotating-switch.xml</path>
     <offsets>
       <x-m> -0.2910 </x-m>
       <y-m>  0.0687 </y-m>
@@ -362,7 +362,7 @@
 
   <!-- front-low-fuel-lamp -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/lamp/front-low-fuel-lamp.xml</path>
+    <path>Models/Interior/Panel/Instruments/lamp/front-low-fuel-lamp.xml</path>
     <offsets>
       <x-m> -0.2910 </x-m>
       <y-m>  0.06946 </y-m>
@@ -372,7 +372,7 @@
 
   <!-- rear-low-fuel-lamp -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/lamp/rear-low-fuel-lamp.xml</path>
+    <path>Models/Interior/Panel/Instruments/lamp/rear-low-fuel-lamp.xml</path>
     <offsets>
       <x-m> -0.2910 </x-m>
       <y-m>  0.09875 </y-m>
@@ -382,7 +382,7 @@
 
   <!-- low-oil-press-lamp -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/lamp/low-oil-press-lamp.xml</path>
+    <path>Models/Interior/Panel/Instruments/lamp/low-oil-press-lamp.xml</path>
     <offsets>
       <x-m> -0.2910 </x-m>
       <y-m> -0.06858 </y-m>
@@ -392,7 +392,7 @@
 
   <!-- audio-plug-left -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/audio-plug/audio-plug.xml</path>
+    <path>Models/Interior/Panel/Instruments/audio-plug/audio-plug.xml</path>
     <offsets>
       <x-m> -0.2909 </x-m>
       <y-m> -0.4995 </y-m>
@@ -402,7 +402,7 @@
 
   <!-- audio-plug-right -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/audio-plug/audio-plug.xml</path>
+    <path>Models/Interior/Panel/Instruments/audio-plug/audio-plug.xml</path>
     <offsets>
       <x-m> -0.2909 </x-m>
       <y-m>  0.4995 </y-m>
@@ -412,7 +412,7 @@
 
   <!-- horameter -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/horameter/horameter.xml</path>
+    <path>Models/Interior/Panel/Instruments/horameter/horameter.xml</path>
     <offsets>
       <x-m> -0.2909 </x-m>
       <y-m>  0.0438 </y-m>
@@ -422,7 +422,7 @@
 
   <!-- chrono -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/chronometer/chrono.xml</path>
+    <path>Models/Interior/Panel/Instruments/chronometer/chrono.xml</path>
     <offsets>
       <x-m> -0.2909 </x-m>
       <y-m>  0.04463 </y-m>
@@ -432,7 +432,7 @@
 
   <!-- manifold-pressure -->
   <model>
-    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Man/man.xml</path>
+    <path>Models/Interior/Panel/Instruments/Man/man.xml</path>
     <offsets>
       <x-m> -0.2909 </x-m>
       <y-m> -0.2236 </y-m>
