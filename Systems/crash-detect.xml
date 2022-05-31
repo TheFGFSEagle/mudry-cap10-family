@@ -34,16 +34,16 @@
 			 </function>
 			 <output>systems/crash-detect/wing-load</output>
 		 </fcs_function>
-
+		
 		 <!--
-					Detect wing loads that exceed limits.
-					Operational limits are +64,000 lbs and
-					-32,000lbs.	IE. +8 or -4 Gs at 8,000 lbs
-					gross weight	This allows for a 40% engineering
-					margin of safety before actual structural
-					failure.	 At higher gross weights the wing
-					structure will fail at lower G loadings.
-					-->
+			Detect wing loads that exceed limits.
+			Operational limits are +64,000 lbs and
+			-32,000lbs.	IE. +8 or -4 Gs at 8,000 lbs
+			gross weight	This allows for a 40% engineering
+			margin of safety before actual structural
+			failure.	 At higher gross weights the wing
+			structure will fail at lower G loadings.
+		-->
 		 <switch>
 			<test value="1" logic="OR">
 				systems/crash-detect/wing-load gt 11500
@@ -52,7 +52,7 @@
 			<output>systems/crash-detect/crashed</output>
 			<output>systems/crash-detect/over-g-failure</output>
 		 </switch>
-
+		
 		 <switch>
 			<test value="1" logic="OR">
 				systems/crash-detect/wing-load gt 10000
@@ -61,7 +61,7 @@
 			<output>systems/crash-detect/over-g</output>
 		 </switch>
 	</channel>
-
+	
 	<channel name="impact-ground">
 		 <switch>
 			<test logic="AND" value="1">
