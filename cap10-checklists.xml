@@ -1,0 +1,559 @@
+<PropertyList>
+  <checklist>  
+    <title>Before Starting Engine</title>
+    <item>
+      <name>Preflight Inspection</name>
+      <value>COMPLETE</value>
+    </item>
+    <item>
+      <name>Seats, Seat Belts, Shoulder Harnesses</name>
+      <value>ADJUST and LOCK</value>
+    </item>
+    <item>
+      <name>Passenger Briefing</name>
+      <value>COMPLETE</value>
+    </item>
+    <item>
+      <name>Brakes</name>
+      <value>TEST and SET (shift-B)</value>
+      <condition>
+        <equals>
+          <property>/controls/gear/brake-parking</property>
+          <value>1</value>
+        </equals>
+      </condition>
+    </item>
+    <item>
+      <name>Master Switch</name>
+      <value>OFF</value>
+      <condition>
+        <equals>
+          <property>/controls/electric/battery-switch</property>
+          <value>0</value>
+        </equals>
+      </condition>
+    </item>
+    <item>
+      <name>Electrical Equipments</name>
+      <value>OFF</value>
+      <condition>
+        <and>
+          <equals>
+            <property>/controls/switches/ai-switch</property>
+            <value>0</value>
+          </equals>
+          <equals>
+            <property>/controls/switches/hi-switch</property>
+            <value>0</value>
+          </equals>
+          <equals>
+            <property>/controls/fuel/tank/boost-pump</property>
+            <value>0</value>
+          </equals>
+        </and>
+      </condition>
+    </item>
+    <item>
+      <name>Flaps</name>
+      <value>UP</value>
+      <condition>
+        <equals>
+          <property>/controls/flight/flaps</property>
+          <value>0</value>
+        </equals>
+      </condition>
+    </item>
+  </checklist>
+  
+  
+  <checklist>
+    <title>Starting Engine</title>
+    <item>
+      <name>Master Switch</name>
+      <value>ON</value>
+      <condition>
+        <equals>
+          <property>/controls/electric/battery-switch</property>
+          <value>1</value>
+        </equals>
+      </condition>
+    </item>
+    <item>
+      <name>Fuel Selector Valve</name>
+      <value>FRONT</value>
+      <value>(for aerobatic use front tank)</value>
+      <condition>
+        <or>
+          <equals>
+            <property>/fdm/jsbsim/propulsion/tank[0]/priority</property>
+            <value>1</value>
+          </equals>
+          <equals>
+            <property>/fdm/jsbsim/propulsion/tank[0]/priority</property>
+            <value>1</value>
+          </equals>
+        </or>
+      </condition>      
+    </item>
+    <item>
+      <name>Throttle</name>
+      <value>1 CM</value>
+      <condition>
+        <greater-than>
+          <property>/controls/engines/engine[0]/throttle</property>
+          <value>0.1</value>
+        </greater-than>
+      </condition>
+    </item>
+    <item>
+      <name>Mixture</name>
+      <value>RICH</value>
+      <condition>
+        <greater-than>
+          <property>/controls/engines/engine[0]/mixture</property>
+          <value>0.9</value>
+        </greater-than>
+      </condition>
+    </item>
+    <item>
+      <name>Magnetos</name>
+      <value>BOTH</value>
+      <value>(press } three times)</value>
+      <condition>
+        <equals>
+          <property>/controls/engines/engine[0]/magnetos</property>
+          <value>3</value>
+        </equals>
+      </condition>
+    </item>
+    <item>
+      <name>Electric pump</name>
+      <value>ON</value>
+      <condition>
+        <equals>
+          <property>/controls/fuel/tank/boost-pump</property>
+          <value>1</value>
+        </equals>
+      </condition>
+    </item>
+    <item>
+      <name>Propellor Area</name>
+      <value>CLEAR</value>
+    </item>
+    <item>
+      <name>Starter Switch</name>
+      <value>ON</value>
+      <value>(press s, release when engine starts)</value>
+    </item>
+    <item>
+      <name>Oil Pressure</name>
+      <value>CHECK</value>
+    </item>
+    <item>
+      <name>Electric pump</name>
+      <value>OFF</value>
+      <condition>
+        <equals>
+          <property>/controls/fuel/tank/boost-pump</property>
+          <value>0</value>
+        </equals>
+      </condition>
+    </item>
+    <item>
+      <name>Navigation Lights, Flashing Beacon</name>
+      <value>ON as required</value>
+      <condition>
+        <equals>
+          <property>/controls/lighting/nav-lights</property>
+          <value>1</value>
+        </equals>
+      </condition>
+    </item>
+    <item>
+      <name>Radios</name>
+      <value>ON</value>
+      <condition>
+        <and>
+          <greater-than>
+            <property>/instrumentation/comm[0]/volume</property>
+            <value>0.0</value>
+          </greater-than>
+          <greater-than>
+            <property>/instrumentation/nav[0]/volume</property>
+            <value>0.0</value>
+          </greater-than>
+        </and>
+      </condition>
+    </item>
+  </checklist>
+  
+  <checklist>
+    <title>Before Takeoff</title>
+    <item>
+      <name>Parking Brake</name>
+      <value>SET (shift-B)</value>
+      <condition>
+        <equals>
+          <property>/controls/gear/brake-parking</property>
+          <value>1</value>
+        </equals>
+      </condition>
+    </item>
+    <item>
+      <name>Seats, Seat Belts, Shoulder Harnesses</name>
+      <value>CHECK SECURE</value>
+    </item>
+    <item>
+      <name>Flight Controls</name>
+      <value>FREE and CORRECT</value>
+    </item>
+    <item>
+      <name>Flight Instruments</name>
+      <value>CHECK and SET</value>
+    </item>
+    <item>
+      <name>Fuel Quantity</name>
+      <value>CHECK</value>
+    </item>
+    <item>
+      <name>Mixture</name>
+      <value>RICH</value>
+      <condition>
+        <greater-than>
+          <property>/controls/engines/engine[0]/mixture</property>
+          <value>0.9</value>
+        </greater-than>
+      </condition>
+    </item>
+    <item>
+      <name>Fuel Selector Valve</name>
+      <value>RECHECK SELECTION</value>
+      <condition>
+        <or>
+          <equals>
+            <property>/fdm/jsbsim/propulsion/tank[0]/priority</property>
+            <value>1</value>
+          </equals>
+          <equals>
+            <property>/fdm/jsbsim/propulsion/tank[0]/priority</property>
+            <value>1</value>
+          </equals>
+        </or>
+      </condition>      
+    </item>
+    <item>
+      <name>Elevator Trim</name>
+      <value>SET for takeoff</value>
+      <condition>
+        <and>
+          <greater-than>
+            <property>/controls/flight/elevator-trim</property>
+            <value>-0.10</value>
+          </greater-than>
+          <less-than>
+            <property>/controls/flight/elevator-trim</property>
+            <value>0.10</value>
+          </less-than>
+        </and>
+      </condition>
+    </item>
+    <item>
+      <name>Radios and Avionics</name>
+      <value>SET</value>
+    </item>
+    <item>
+      <name>Flaps</name>
+      <value>SET for takeoff</value>
+      <condition>
+        <equals>
+          <property>/controls/flight/flaps</property>
+          <value>0.25</value>
+        </equals>
+      </condition>
+    </item>
+    <item>
+      <name>Brakes</name>
+      <value>RELEASE</value>
+      <condition>
+        <not-equals>
+          <property>/controls/gear/brake-parking</property>
+          <value>1</value>
+        </not-equals>
+      </condition>
+    </item>    
+  </checklist>
+  
+  <checklist>
+    <title>Normal Takeoff</title>  
+    <item>
+      <name>Flaps</name>
+      <value>1st step</value>
+      <condition>
+        <equals>
+          <property>/controls/flight/flaps</property>
+          <value>0.25</value>
+        </equals>
+      </condition>
+    </item>
+    <item>
+      <name>Mixture</name>
+      <value>RICH</value>
+      <value>(above 3000ft, LEAN to obtain maximum RPM)</value>
+      <condition>
+        <greater-than>
+          <property>/controls/engines/engine[0]/mixture</property>
+          <value>0.9</value>
+        </greater-than>
+      </condition>
+    </item>
+    <item>
+      <name>Throttle</name>
+      <value>FULL OPEN</value>
+      <condition>
+        <greater-than>
+          <property>/controls/engines/engine/throttle</property>
+          <value>0.95</value>
+        </greater-than>
+      </condition>
+    </item>
+  </checklist>
+
+  <checklist>
+    <title>Enroute Climb</title>  
+    <item>
+      <name>Airspeed</name>
+      <value>150 - 160 KM/H</value>
+      <condition>
+        <and>
+          <greater-than>
+            <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+            <value>81.0</value>
+          </greater-than>
+          <less-than>
+            <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+            <value>87.0</value>
+          </less-than>
+        </and>
+      </condition>
+    </item>
+    <item>
+      <name>Throttle</name>
+      <value>FULL OPEN</value>
+      <condition>
+        <greater-than>
+          <property>/controls/engines/engine/throttle</property>
+          <value>0.95</value>
+        </greater-than>
+      </condition>
+    </item>
+    <item>
+      <name>Mixture</name>
+      <value>RICH</value>
+      <value>(above 3000ft, LEAN to obtain maximum RPM)</value>
+      <condition>
+        <greater-than>
+          <property>/controls/engines/engine[0]/mixture</property>
+          <value>0.9</value>
+        </greater-than>
+      </condition>
+    </item>
+  </checklist>
+
+  <checklist>
+    <title>Cruise</title>  
+    <item>
+      <name>Power</name>
+      <value>2100-2700 RPM</value>
+      <value>(no more than 75% recommended)</value>
+      <condition>
+        <and>
+          <greater-than>
+            <property>/engines/engine/rpm</property>
+            <value>2100</value>
+          </greater-than>
+          <less-than>
+            <property>/engines/engine/rpm</property>
+            <value>2700</value>
+          </less-than>
+        </and>
+      </condition>
+    </item>
+    <item>
+      <name>Elevator Trim</name>
+      <value>ADJUST</value>
+    </item>
+    <item>
+      <name>Mixture</name>
+      <value>LEAN</value>
+    </item>
+  </checklist>
+
+  <checklist>
+    <title>Normal Landing</title>
+    <item>
+      <name>Parking Brake</name>
+      <value>RELEASE</value>
+      <condition>
+        <equals>
+          <property>/controls/gear/brake-parking</property>
+          <value>0</value>
+        </equals>
+      </condition>
+    </item>
+    <item>
+      <name>Airspeed</name>
+      <value>200 KM/H (flaps UP)</value>
+      <condition>
+        <and>
+          <greater-than>
+            <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+            <value>103.0</value>
+          </greater-than>
+          <less-than>
+            <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+            <value>110.0</value>
+          </less-than>
+        </and>
+      </condition>
+    </item>
+    <item>
+      <name>Flaps</name>
+      <value>AS DESIRED</value>
+      <value>0 - 10 degrees below 150 KM/H</value>
+      <value>10 - 30 degrees below 120 KM/H</value>
+    </item>
+    <item>
+      <name>Airspeed</name>
+      <value>120 KM/H (flaps DOWN)</value>
+      <condition>
+        <and>
+          <greater-than>
+            <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+            <value>60.0</value>
+          </greater-than>
+          <less-than>
+            <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+            <value>68.0</value>
+          </less-than>
+        </and>
+      </condition>
+    </item>
+    <item>
+      <name>Braking</name>
+      <value>MINIMUM REQUIRED</value>
+    </item>
+  </checklist>
+
+  <checklist>
+    <title>After Landing</title>  
+    <item>
+      <name>Flaps</name>
+      <value>UP</value>
+      <condition>
+        <equals>
+          <property>/controls/flight/flaps</property>
+          <value>0.0</value>
+        </equals>
+      </condition>
+    </item>
+  </checklist>
+  
+  <checklist>
+    <title>Shutdown Engine</title>  
+    <item>
+      <name>Parking Brake</name>
+      <value>SET</value>
+      <condition>
+        <equals>
+          <property>/controls/gear/brake-parking</property>
+          <value>1</value>
+        </equals>
+      </condition>
+    </item>
+    <item>
+      <name>Avionics, Electrical</name>
+      <value>OFF</value>
+      <condition>
+        <and>
+          <equals>
+            <property>/instrumentation/comm[0]/volume</property>
+            <value>0.0</value>
+          </equals>
+          <equals>
+            <property>/instrumentation/nav[0]/volume</property>
+            <value>0.0</value>
+          </equals>
+          <equals>
+            <property>/controls/switches/ai-switch</property>
+            <value>0</value>
+          </equals>
+          <equals>
+            <property>/controls/switches/hi-switch</property>
+            <value>0</value>
+          </equals>
+          <equals>
+            <property>/controls/fuel/tank/boost-pump</property>
+            <value>0</value>
+          </equals>
+        </and>
+      </condition>
+    </item>
+    <item>
+      <name>Throttle</name>
+      <value>PULLED FULL OUT</value>
+      <condition>
+        <less-than>
+          <property>/controls/engines/engine[0]/throttle</property>
+          <value>0.05</value>
+        </less-than>
+      </condition>
+    </item>
+    <item>
+      <name>Mixture</name>
+      <value>PULLED FULL OUT</value>
+      <condition>
+        <less-than>
+          <property>/controls/engines/engine[0]/mixture</property>
+          <value>0.05</value>
+        </less-than>
+      </condition>
+    </item>
+    <item>
+      <name>Magnetos</name>
+      <value>OFF</value>
+      <condition>
+        <equals>
+          <property>/controls/engines/engine[0]/magnetos</property>
+          <value>0</value>
+        </equals>
+      </condition>
+    </item>
+    <item>
+      <name>Master Switch</name>
+      <value>OFF</value>
+      <condition>
+        <equals>
+          <property>/controls/electric/battery-switch</property>
+          <value>0</value>
+        </equals>
+      </condition>
+    </item>
+    <item>
+      <name>Fuel Selector Valve</name>
+      <value>MIDDLE</value>
+      <condition>
+        <and>
+          <equals>
+            <property>/fdm/jsbsim/propulsion/tank[0]/priority</property>
+            <value>0</value>
+          </equals>
+          <equals>
+            <property>/fdm/jsbsim/propulsion/tank[0]/priority</property>
+            <value>0</value>
+          </equals>
+        </and>
+      </condition>      
+    </item>
+  </checklist>
+  
+</PropertyList>

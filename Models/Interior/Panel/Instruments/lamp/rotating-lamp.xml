@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ########################################
+
+ # DR400-jsbSim by PAF team
+ # April 2012 : Modified by PAF team
+ # http://equipe-flightgear.forumactif.com
+
+##########################################-->
+
+<PropertyList>
+
+  <path>red-led.ac</path>
+
+  <animation>
+    <type>range</type>
+    <min-m>  0 </min-m>
+    <max-m> 45 </max-m>
+  </animation>
+
+  <animation>
+    <object-name>supportLed</object-name>
+    <object-name>led</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>led</object-name>
+    <condition>
+      <greater-than-equals>
+        <property>systems/electrical/outputs/strobe-lights</property>
+        <value>1</value>
+      </greater-than-equals>
+    </condition>
+    <emission>
+      <red>1.0</red>
+      <green>0.2</green>
+      <blue>0.0</blue>
+      <factor-prop>systems/electrical/volts</factor-prop>
+    </emission>
+  </animation>
+
+</PropertyList>

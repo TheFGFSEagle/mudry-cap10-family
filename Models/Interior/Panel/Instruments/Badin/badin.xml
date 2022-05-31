@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>badin.ac</path>
+
+  <nasal>
+    <load>
+      print("toto");
+    </load>
+    <unload>
+    </unload>
+  </nasal>
+
+  <animation>
+    <type>range</type>
+    <min-m>  0 </min-m>
+    <max-m> 45 </max-m>
+  </animation>
+  
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+  
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Cap10B/Models/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+  
+  <!--<animation>
+    <type>material</type>
+    <object-name>badin</object-name>
+    <object-name>aiguille</object-name>
+    <emission>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>-->
+  
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>aiguille</object-name>
+    <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <interpolation>
+      <entry><ind>   0.00 </ind><dep>   0 </dep></entry> <!--   0 km/h -->
+      <entry><ind>  27.00 </ind><dep>  12 </dep></entry> <!--  50 km/h -->
+      <entry><ind>  54.00 </ind><dep>  40 </dep></entry> <!-- 100 km/h -->
+      <entry><ind>  81.00 </ind><dep>  80</dep></entry> <!-- 150 km/h -->
+      <entry><ind> 107.99 </ind><dep> 160 </dep></entry> <!-- 200 km/h -->
+      <entry><ind> 135.00 </ind><dep> 200</dep></entry> <!-- 250 km/h -->
+      <entry><ind> 161.99 </ind><dep> 240 </dep></entry> <!-- 300 km/h -->
+      <entry><ind> 189.00 </ind><dep> 280 </dep></entry> <!-- 350 km/h -->
+      <entry><ind> 215.98 </ind><dep> 320 </dep></entry> <!-- 400 km/h -->
+    </interpolation>    
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>
+

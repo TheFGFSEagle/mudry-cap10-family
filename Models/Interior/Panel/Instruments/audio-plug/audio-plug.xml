@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ########################################
+
+ # DR400-jsbSim by PAF team
+ # April 2012 : Modified by PAF team
+ # http://equipe-flightgear.forumactif.com
+
+##########################################-->
+
+<PropertyList>
+
+  <path>audio-plug.ac</path>
+
+  <animation>
+    <type>range</type>
+    <min-m>  0 </min-m>
+    <max-m> 45 </max-m>
+  </animation>
+  
+  <animation>
+      <object-name>circle</object-name>
+      <object-name>sphere001</object-name>
+      <object-name>sphere002</object-name>
+      <object-name>Plane</object-name>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Plane</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/chatter/enabled</property>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/messages/copilot</property>
+        <value>Chatter on/off</value>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Plane</object-name>
+    <action>
+      <button>3</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>sim/sound/volume</property>
+        <step>0.025</step>
+        <min>0.0</min>
+        <max>1.0</max>
+      </binding>
+    </action>
+    <action>
+      <button>4</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>sim/sound/volume</property>
+        <step>-0.025</step>
+        <min>0.0</min>
+        <max>1.0</max>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- TEXT OSG -->
+  <text>
+    <name>textosg</name>
+    <type type="string">literal</type>
+    <text type="string">Volume &amp; Chatter on/off</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.014</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.08</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.030 </z-m>
+    </offsets>
+  </text>
+
+  <animation>
+    <type>material</type>
+    <object-name>textosg</object-name>
+    <emission>
+      <red>   0.8 </red>
+      <green> 0.8 </green>
+      <blue>  0.0 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>textosg</object-name>
+    <condition>
+      <property>sim/panel-hotspots</property>
+    </condition>
+  </animation>
+
+</PropertyList>

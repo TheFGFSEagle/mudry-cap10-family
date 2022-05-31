@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ cap10b-set.xml  - Cap10B by PAF team  - http://equipe-flightgear.forumactif.com
+
+ Written by Flavien BLANC
+ Modified by PAF team  - April 2012
+
+ Copyright (C) 2011-2012  Flavien BLANC  - http://equipe-flightgear.forumactif.com/u56
+ Copyright (C) 2012  Clément DE L'HAMAIDE  - http://equipe-flightgear.forumactif.com/u115
+ Copyright (C) 2012  Christian THIRIOT "PATEN"  - http://equipe-flightgear.forumactif.com/u114
+
+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2 of the
+ License, or (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program; if not see <http://www.gnu.org/licenses/>.
+-->
+
+<PropertyList>
+
+  <path>handle.ac</path>
+
+  <animation>
+    <type>range</type>
+    <min-m>  0 </min-m>
+    <max-m> 45 </max-m>
+  </animation>
+  
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>mancheg</object-name>
+    <object-name>manched</object-name>
+    <object-name>support1g</object-name>
+    <object-name>support1d</object-name>
+    <object-name>support2g</object-name>
+    <object-name>support2d</object-name>
+    <object-name>support3g</object-name> <!-- ne bouge pas -->
+    <object-name>support3d</object-name> <!-- ne bouge pas -->
+  </animation>
+  
+  <!-- ailerons -->    
+  <animation>
+    <type>rotate</type>
+    <object-name>mancheg</object-name>
+    <property>/controls/flight/aileron</property>
+    <factor>20</factor>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.284 </y-m>  
+      <z-m>  0.034 </z-m>    
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+    <animation>
+    <type>rotate</type>
+    <object-name>manched</object-name>
+    <property>/controls/flight/aileron</property>
+    <factor>20</factor>    
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.284 </y-m>  
+      <z-m>  0.034 </z-m>    
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+    <animation>
+    <type>rotate</type>
+    <object-name>support3g</object-name>
+    <property>/controls/flight/aileron</property>
+    <factor>10</factor>    
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.284 </y-m>  
+      <z-m>  0.028 </z-m>    
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+    <animation>
+    <type>rotate</type>
+    <object-name>support3d</object-name>
+    <property>/controls/flight/aileron</property>
+    <factor>10</factor>    
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.284 </y-m>  
+      <z-m>  0.028 </z-m>    
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+
+    <animation>
+    <type>rotate</type>
+    <object-name>support2g</object-name>
+    <property>/controls/flight/aileron</property>
+    <factor>5</factor>    
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.284 </y-m>  
+      <z-m>  0.015 </z-m>    
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>support2d</object-name>
+    <property>/controls/flight/aileron</property>
+    <factor>5</factor>    
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.284 </y-m>  
+      <z-m>  0.015 </z-m>    
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+
+<!-- gouverne de profondeur -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>mancheg</object-name>
+    <property>/controls/flight/elevator</property>
+    <factor>22</factor>
+    <offset-deg>-8</offset-deg>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.284 </y-m>  
+      <z-m>  0.034 </z-m>    
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+    <animation>
+    <type>rotate</type>
+    <object-name>manched</object-name>
+    <property>/controls/flight/elevator</property>
+    <factor>22</factor>
+    <offset-deg>-8</offset-deg>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.284 </y-m>  
+      <z-m>  0.034 </z-m>    
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+    <animation>
+    <type>rotate</type>
+    <object-name>support3g</object-name>
+    <property>/controls/flight/elevator</property>
+    <factor>10</factor>    
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.284 </y-m>  
+      <z-m>  0.028 </z-m>    
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+    <animation>
+    <type>rotate</type>
+    <object-name>support3d</object-name>
+    <property>/controls/flight/elevator</property>
+    <factor>10</factor>    
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.284 </y-m>  
+      <z-m>  0.028 </z-m>    
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+
+    <animation>
+    <type>rotate</type>
+    <object-name>support2g</object-name>
+    <property>/controls/flight/elevator</property>
+    <factor>5</factor>    
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.284 </y-m>  
+      <z-m>  0.015 </z-m>    
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>support2d</object-name>
+    <property>/controls/flight/elevator</property>
+    <factor>5</factor>    
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.284 </y-m>  
+      <z-m>  0.015 </z-m>    
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  
+</PropertyList>
+

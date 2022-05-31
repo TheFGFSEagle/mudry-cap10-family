@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ cap10b-set.xml  - Cap10B by PAF team  - http://equipe-flightgear.forumactif.com
+
+ Written by Flavien BLANC
+ Modified by PAF team  - April 2012
+
+ Copyright (C) 2011-2012  Flavien BLANC  - http://equipe-flightgear.forumactif.com/u56
+ Copyright (C) 2012  Clément DE L'HAMAIDE  - http://equipe-flightgear.forumactif.com/u115
+ Copyright (C) 2011-2012 Christian THIRIOT (PATTEN) - http://equipe-flightgear.forumactif.com/u114
+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2 of the
+ License, or (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program; if not see <http://www.gnu.org/licenses/>.
+-->
+
+<PropertyList>
+
+  <fx>
+
+    <crank>
+      <name>engstart</name>
+      <path>Aircraft/Cap10B/Sounds/Cap10B_starter_1.wav</path>
+      <property>engines/engine/cranking</property>
+      <volume>
+        <offset>-0.6</offset>
+      </volume>
+    </crank>
+    <crank>
+      <name>crank</name>
+      <mode>looped</mode>
+      <path>Aircraft/Cap10B/Sounds/Cap10B_starter_1.wav</path>
+      <condition>
+        <property>engines/engine/cranking</property>
+        <not>
+          <property>engines/engine/running</property>
+        </not>
+      </condition>
+      <volume>
+        <offset>0.9</offset>
+      </volume>
+    </crank>
+    <crank>
+      <name>cough</name>
+      <path>Aircraft/Cap10B/Sounds/Cap10B_lancement.wav</path>
+      <property>engines/engine/running</property>
+	 <volume>
+        <offset>0.2</offset>
+      </volume>
+    </crank>
+
+    <engine>
+      <name>engine</name>
+      <mode>looped</mode>
+      <path>Aircraft/Cap10B/Sounds/Cap10B_croisiere1_OUT.wav</path>
+      <condition>
+        <and>
+          <greater-than>
+            <property>engines/engine/rpm</property>
+            <value>60</value>
+          </greater-than>
+          <or>
+            <greater-than>
+              <property>instrumentation/doors/crew/position-norm</property>
+              <value>0</value>
+            </greater-than>
+            <not>
+              <property>sim/current-view/internal</property>
+            </not>
+          </or>
+        </and>
+      </condition>
+      <volume>
+        <property>engines/engine/mp-osi</property>
+        <factor>0.00375</factor>
+        <min>0.5</min>
+        <max>4.0</max>
+      </volume>
+      <pitch>
+        <property>engines/engine/rpm</property>
+        <factor>0.0005</factor>
+        <min>0.2</min>
+        <max>4.0</max>
+        <offset>0.15</offset>
+      </pitch>
+    </engine>
+
+    <engine-internal>
+      <name>engine-internal</name>
+      <mode>looped</mode>
+      <path>Aircraft/Cap10B/Sounds/Cap10B_croisiere1_INT.wav</path>
+      <condition>
+        <and>
+          <greater-than>
+            <property>engines/engine/rpm</property>
+            <value>60</value>
+          </greater-than>
+          <not>
+            <greater-than>
+              <property>instrumentation/doors/crew/position-norm</property>
+              <value>0</value>
+            </greater-than>
+          </not>
+        </and>
+      </condition>
+      <pitch>
+        <property>engines/engine/rpm</property>
+        <factor>0.0005</factor>
+        <min>0.2</min>
+        <max>2.0</max>
+        <offset>0.15</offset>
+      </pitch>
+      <reference-dist>4.0</reference-dist>
+      <max-dist>10.0</max-dist>
+    </engine-internal>
+
+    <propeller>
+      <name>propeller</name>
+      <mode>looped</mode>
+      <path>Aircraft/Cap10B/Sounds/Cap10B_fond1.wav</path>
+      <condition>
+        <greater-than>
+          <property>engines/engine/rpm</property>
+          <value>60</value>
+        </greater-than>
+        <not>
+          <and>
+            <equals>
+              <property>instrumentation/doors/crew/position-norm</property>
+              <value>0</value>
+            </equals>
+            <property>sim/current-view/internal</property>
+          </and>
+        </not>
+      </condition>
+      <pitch>
+        <property>/engines/engine/mp-osi</property>
+        <factor>0.0036</factor>
+        <min>0.5</min>
+        <max>2.0</max>
+        <offset>0.9</offset>
+      </pitch>
+    </propeller>
+
+    <stop>
+       <name>stop</name>
+        <path>Aircraft/Cap10B/Sounds/Cap10B-shutdown.wav</path>
+    <condition>
+      <not>
+            <property>/engines/engine/running</property>
+      </not>
+    </condition>
+       <volume>
+            <property>/sim/current-view/internal</property>
+               <factor>2.0</factor>
+      <offset>1.0</offset>
+       </volume>
+    <reference-dist>100</reference-dist>
+    <max-dist>1000</max-dist>
+     <position>
+      <x> -2.627 </x>
+       <y>  1.740 </y>
+      <z>  0.021 </z>
+     </position>
+   </stop>  
+
+    <rumble>
+      <name>rumble</name>
+      <mode>looped</mode>
+      <path>Aircraft/Cap10B/Sounds/Cap10B_roulage.wav</path>
+      <condition>
+        <and>
+          <or>
+            <property>gear/gear[0]/wow</property>
+            <property>gear/gear[1]/wow</property>
+            <property>gear/gear[2]/wow</property>
+          </or>
+          <or>
+            <greater-than>
+              <property>gear/gear[0]/rollspeed-ms</property>
+              <value>1</value>
+            </greater-than>
+            <greater-than>
+              <property>gear/gear[1]/rollspeed-ms</property>
+              <value>1</value>
+            </greater-than>
+            <greater-than>
+              <property>gear/gear[2]/rollspeed-ms</property>
+              <value>1</value>
+            </greater-than>
+          </or>
+        </and>
+      </condition>
+      <volume>
+	      <property>/velocities/airspeed-kt</property>
+	      <type>log</type>
+	      <factor>0.25</factor>
+   </volume>
+    </rumble>
+
+    <freinage>
+      <name>freinage</name>
+      <path>Aircraft/Cap10B/Sounds/Cap10B_freinage.wav</path>
+      <condition>
+        <or>
+          <property>gear/gear[0]/wow</property>
+          <property>gear/gear[1]/wow</property>
+          <property>gear/gear[2]/wow</property>
+        </or>
+      </condition>
+      <volume>
+        <property>velocities/speed-down-fps</property>
+        <factor>0.5</factor>
+        <max>1.0</max>
+      </volume>
+      <volume>
+        <property>velocities/airspeed-kt</property>
+        <factor>0.01</factor>
+        <max>0.2</max>
+        <max>1.0</max>
+      </volume>
+      <volume>
+        <internal>dt_stop</internal>
+        <factor>0.05</factor>
+        <max>1.0</max>
+      </volume>
+      <pitch>
+        <property>velocities/airspeed-kt</property>
+        <factor>0.0025</factor>
+        <offset>1.2</offset>
+      </pitch>
+    </freinage>
+
+<click>
+      <name>Flap0</name>
+      <path>Aircraft/Cap10B/Sounds/Cap10B_volets.wav</path>
+      <condition>
+          <equals>
+            <property>controls/flight/flaps</property>
+            <value>0</value>
+          </equals>
+      </condition>
+      <volume>
+        <factor>1.0</factor>
+      </volume>
+    </click>
+ 
+    <click>
+      <name>Flap1</name>
+      <path>Aircraft/Cap10B/Sounds/Cap10B_volets.wav</path>
+      <condition>
+          <equals>
+            <property>controls/flight/flaps</property>
+            <value>0.25</value>
+          </equals>
+      </condition>
+      <volume>
+        <factor>1.0</factor>
+      </volume>
+    </click>
+ 
+    <click>
+      <name>Flap2</name>
+      <path>Aircraft/Cap10B/Sounds/Cap10B_volets.wav</path>
+      <condition>
+          <equals>
+            <property>controls/flight/flaps</property>
+            <value>1.00</value>
+          </equals>
+      </condition>
+      <volume>
+        <factor>1.0</factor>
+      </volume>
+    </click>
+
+ <!-- Pompe fuel -->
+     <pump>
+      <name>Pompe fuel</name>
+      <mode>looped</mode>
+      <path>Aircraft/Cap10B/Sounds/Cap10B_pompe_fuel.wav</path>
+       <condition>
+          <property>systems/electrical/outputs/fuel-pump</property>
+          <value>24</value> 
+    </condition>    
+      <volume>
+           <factor>2.0</factor>
+      </volume>
+       <reference-dist>100</reference-dist>
+    <max-dist>1000</max-dist>      
+    </pump>
+
+    <alarme>
+      <name>alarme</name>
+      <mode>looped</mode>
+      <path>Aircraft/Cap10B/Sounds/Cap10B_alarme.wav</path>
+      <condition>
+        <and>
+          <property>controls/electric/battery-switch</property>
+        <greater-than>
+          <property>fdm/jsbsim/aero/alpha-wing-rad</property>
+          <value>0.279</value>
+        </greater-than>
+          <not>
+            <property>gear/gear[0]/wow</property>
+            <property>gear/gear[1]/wow</property>
+            <property>gear/gear[2]/wow</property>
+          </not>
+        </and>
+      </condition>
+      <reference-dist>4.0</reference-dist>
+      <max-dist>10.0</max-dist>
+    </alarme>
+
+    <vent>
+      <name>vent</name>
+      <mode>looped</mode>
+      <path>Aircraft/Cap10B/Sounds/Cap10B_vent.wav</path>
+      <property>velocities/airspeed-kt</property>
+      <volume>
+        <property>velocities/airspeed-kt</property>
+        <factor>0.005</factor>
+        <max>1.5</max>
+      </volume>
+      <pitch>
+        <property>velocities/airspeed-kt</property>
+        <factor>0.005</factor>
+      </pitch>
+    </vent>
+
+    <!--                  Toggle Switches                  -->
+    <click>
+      <name>Clickon</name>
+      <path>Aircraft/Cap10B/Sounds/click.wav</path>
+      <condition>
+        <property>sim/model/click</property>
+      </condition>
+      <volume>
+        <factor>1.0</factor>
+      </volume>
+    </click>
+
+    <click>
+      <name>Clickoff</name>
+      <path>Aircraft/Cap10B/Sounds/click.wav</path>
+      <condition>
+        <not><property>sim/model/click</property></not>
+      </condition>
+      <volume>
+        <factor>1.0</factor>
+      </volume>
+    </click>
+
+    <squish>
+      <name>Primer Out</name>
+      <path>Aircraft/Cap10B/Sounds/Cap10B_freinage.wav</path>
+      <condition>
+        <property>controls/engines/engine/primer-pump</property>
+      </condition>
+      <volume>
+        <factor>0.1</factor>
+      </volume>
+    </squish>
+
+    <squish>
+      <name>Primer In</name>
+      <path>Aircraft/Cap10B/Sounds/Cap10B_freinage.wav</path>
+      <condition>
+        <not>
+          <property>controls/engines/engine/primer-pump</property>
+        </not>
+      </condition>
+      <volume>
+        <factor>0.1</factor>
+      </volume>
+    </squish>
+
+  </fx>
+
+</PropertyList>

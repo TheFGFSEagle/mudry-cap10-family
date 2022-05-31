@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>bille_dos.ac</path>
+
+  <animation>
+    <type>range</type>
+    <min-m>  0 </min-m>
+    <max-m> 45 </max-m>
+  </animation>
+  
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+  
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Cap10B/Models/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+  
+  <!--<animation>
+    <type>material</type>
+    <object-name>bille</object-name>
+    <emission>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>-->
+  
+    <animation>
+    <type>rotate</type>
+    <object-name>bille</object-name>
+    <property>instrumentation/slip-skid-ball/indicated-slip-skid</property>
+    <factor>-0.25</factor>
+    <min-deg> -4.78 </min-deg>
+    <max-deg>  4.78 </max-deg>
+    <center>
+      <x-m> 0.00 </x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> -0.22 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>
+

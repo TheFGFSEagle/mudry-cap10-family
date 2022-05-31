@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ cap10b-set.xml  - Cap10B by PAF team  - http://equipe-flightgear.forumactif.com
+
+ Written by Flavien BLANC
+ Modified by PAF team  - April 2012
+
+ Copyright (C) 2011-2012  Flavien BLANC  - http://equipe-flightgear.forumactif.com/u56
+ Copyright (C) 2012  Clément DE L'HAMAIDE  - http://equipe-flightgear.forumactif.com/u115
+
+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2 of the
+ License, or (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program; if not see <http://www.gnu.org/licenses/>.
+-->
+
+<PropertyList>
+
+  <sim>
+
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+
+    <startup>
+      <splash-texture>Aircraft/Cap10B/Cap10-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/Cap10B/Sounds/sound.xml</path>
+    </sound>
+
+    <fuel-fraction>0.75</fuel-fraction>
+
+    <model>
+      <click type="bool">0</click>
+      <livery>
+        <file type="string">default</file>
+        <name type="string">Default</name>
+        <shininess type="double">96</shininess>
+        <texture type="string">texture.png</texture>
+        <reflection-correction type="double">-0.55</reflection-correction>
+      </livery>
+      <config>
+        <show-pilot type="bool">       1 </show-pilot>
+        <show-yokes type="bool">       1 </show-yokes>
+        <light-cone type="bool">       1 </light-cone>
+        <show-copilot type="bool">     0 </show-copilot>
+        <details-high type="bool">     0 </details-high>
+        <glass-reflection type="bool"> 0 </glass-reflection>
+      </config>
+    </model>
+
+    <flaps>
+      <setting>0.00</setting>
+      <setting>0.25</setting> 
+      <setting>1.00</setting> 
+    </flaps>
+
+    <help>
+      <title>Cap10B</title>
+      <key>
+        <name>S</name>
+        <desc>Start/stop smoke</desc>
+      </key>
+      <line/>
+      <line>_________Reports_________</line>
+      <line>Rotate    = 100km/h (54kt) </line>
+      <line>Downwind  = 1800 RPM, 10 flaps</line>
+      <line>Final     = 1500 RPM, descent at 500ft/min</line>
+      <line/>
+      <line>_______Stall speeds______</line>
+      <line>           (Cat. U, idle)        </line>
+      <line>Vs flaps  0 = 99km/h (53kt)</line>
+      <line>Vs flaps 10 = 91km/h (49kt)</line>
+      <line>Vs flaps 40 = 86km/h (46kt)</line>
+      <line/>
+      <line>_________Fuel_________</line>
+      <line>For aerobatics, use front tank only and rear tank must be empty</line>
+      <line/>
+      <line>Rear tank is empty at startup</line>
+      <line>feel you free to fill it with the menu "Equipement > Fuel and Payload"</line>
+    </help>
+
+    <systems>
+      <electrical>
+        <path></path>
+      </electrical>
+    </systems>
+
+    <!-- ############################### -->
+    <!-- ######## DUAL CONTROL ######### -->
+    <remote>
+     <pilot-callsign type="string"></pilot-callsign>
+    </remote>
+
+  </sim>
+
+  <controls>
+    <smoke type="bool">0</smoke>
+    <lighting>
+     <instruments-norm type="double">1</instruments-norm>
+     <panel-norm type="double">1</panel-norm>
+     <landing-lights type="bool">0</landing-lights>
+    </lighting>
+    <gear>
+      <brake-parking type="bool">1</brake-parking>
+      <brake-parking-pos type="double">1.0</brake-parking-pos>
+    </gear>
+    <throttle-coupled type="bool">1</throttle-coupled>
+    <mixture-coupled type="bool">1</mixture-coupled>
+    <prop-coupled type="bool">1</prop-coupled>
+    <movement-scale type="double">0.025</movement-scale>
+    <engines>
+      <engine n="0">
+        <starter_cmd type="bool">0</starter_cmd>
+      </engine>
+    </engines>
+    <fuel>
+      <selected-tank type="int">0</selected-tank>
+      <selected-tank-pos type="double">0</selected-tank-pos>
+    </fuel>
+    <flight>
+      <aileron-trim>0.023</aileron-trim>
+      <rudder-trim>0.012</rudder-trim>
+    </flight>
+    <switches>
+      <ai-switch type="bool">0</ai-switch>
+      <hi-switch type="bool">0</hi-switch>
+      <smoke type="bool">0</smoke>
+    </switches>
+  </controls>
+
+  <engines>
+    <engine>
+      <oil-pressure-psi-pos type="double">0</oil-pressure-psi-pos>
+      <oil-temperature-degf-pos type="double">0</oil-temperature-degf-pos>
+      <rpm type="int">0</rpm>
+    </engine>
+  </engines>
+
+  <payload>
+    <weight>
+      <name type="string">Pilot</name>
+      <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]"/>
+      <min-lb type="double">0.0</min-lb>
+      <max-lb type="double">180</max-lb>
+    </weight>
+    <weight>
+      <name type="string">Copilot</name>
+      <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[1]"/>
+      <min-lb type="double">0.0</min-lb>
+      <max-lb type="double">180</max-lb>
+    </weight>
+  </payload>
+
+  <consumables>
+    <fuel>
+      <tank n="0">
+        <level-gal_us-pos type="double">0</level-gal_us-pos>
+      </tank>
+      <tank n="1">
+        <level-gal_us-pos type="double">0</level-gal_us-pos>
+      </tank>
+    </fuel>
+  </consumables>
+
+  <instrumentation>
+    <comm n="0">
+      <power-btn type="bool">0</power-btn>
+      <volume type="double">0</volume>
+    </comm>
+    <comm n="1">
+      <power-btn type="bool">0</power-btn>
+      <volume type="double">0</volume>
+    </comm>
+    <kt76a>
+      <digit n="0" type="int">7</digit>
+      <digit n="1" type="int">0</digit>
+      <digit n="2" type="int">0</digit>
+      <digit n="3" type="int">0</digit>
+      <mode type="int">0</mode>
+    </kt76a>
+    <chrono>
+      <power-btn type="bool">0</power-btn>
+    </chrono>
+  </instrumentation>
+
+  <fdm>
+    <jsbsim>
+      <propulsion>
+        <tank n="0">
+          <priority type="int">0</priority>
+        </tank>
+        <tank n="1">
+          <priority type="int">0</priority>
+        </tank>
+      </propulsion>
+      <gear>
+        <unit n="0">
+          <broken type="bool">0</broken>
+        </unit>
+        <unit n="1">
+          <broken type="bool">0</broken>
+        </unit>
+        <unit n="2">
+          <broken type="bool">0</broken>
+        </unit>
+      </gear>
+    </jsbsim>
+  </fdm>
+
+  <input>
+    <keyboard>
+      <key n="115">
+        <name>s</name>
+        <desc>Starter</desc>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/engines/engine/starter_cmd</property>
+          <value>1</value>
+        </binding>
+        <mod-up>
+          <binding>
+            <command>property-assign</command>
+            <property>controls/engines/engine/starter_cmd</property>
+            <value>0</value>
+          </binding>
+        </mod-up>
+      </key>
+
+      <key n="83">
+        <name>S</name>
+        <desc>Start/stop smoke</desc>
+        <binding>
+          <command>property-toggle</command>
+          <property>controls/switches/smoke</property>
+        </binding>
+      </key>
+    </keyboard>
+  </input>
+
+  <nasal>
+    <cap10bCommon>
+      <file>Aircraft/Cap10B/Nasal/liveries.nas</file>
+      <file>Aircraft/Cap10B/Nasal/light.nas</file>
+      <file>Aircraft/Cap10B/Nasal/electrical.nas</file>
+      <file>Aircraft/Cap10B/Nasal/interpolate.nas</file>
+    </cap10bCommon>
+
+    <garmin196>
+      <file>Aircraft/Instruments-3d/garmin196/garmin196.nas</file>
+    </garmin196>
+
+  </nasal>
+
+</PropertyList>
+

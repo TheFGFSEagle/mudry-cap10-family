@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ cap10c-set.xml  - Cap10C by PAF team  - http://equipe-flightgear.forumactif.com
+
+ Written by Clément DE L'HAMAIDE
+ Modified by PAF team  - April 2012
+
+ Copyright (C) 2012  Clément DE L'HAMAIDE  - http://equipe-flightgear.forumactif.com/u115
+ Copyright (C) 2012  Christian THIRIOT "PATTEN"  - http://equipe-flightgear.forumactif.com/u114
+
+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2 of the
+ License, or (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program; if not see <http://www.gnu.org/licenses/>.
+-->
+
+<PropertyList>
+
+  <path>palonnier.ac</path>
+
+  <animation>
+    <type>range</type>
+    <min-m>  0 </min-m>
+    <max-m> 45 </max-m>
+  </animation>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>boitier</object-name>
+    <object-name>palonnierL</object-name>
+    <object-name>palonnierR</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>palonnierL</object-name>
+    <object-name>brakeL</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor>25</factor>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>palonnierR</object-name>
+    <object-name>brakeR</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor>25</factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+
+  <animation>
+    <type>rotate</type>
+    <object-name>brakeL</object-name>
+    <property>controls/gear/brake-left</property>
+    <factor>25</factor>
+    <center>
+      <x-m> 0.000474 </x-m>
+      <y-m> 0.009147 </y-m>
+      <z-m> 0.101700 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>brakeR</object-name>
+    <property>controls/gear/brake-right</property>
+    <factor>25</factor>
+    <center>
+      <x-m> 0.000474 </x-m>
+      <y-m> 0.009147 </y-m>
+      <z-m> 0.101700 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

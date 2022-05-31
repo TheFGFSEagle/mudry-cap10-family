@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ cap10b-set.xml  - Cap10B by PAF team  - http://equipe-flightgear.forumactif.com
+
+ Written by Flavien BLANC
+ Modified by PAF team  - April 2012
+
+ Copyright (C) 2011-2012  Flavien BLANC  - http://equipe-flightgear.forumactif.com/u56
+ Copyright (C) 2012  Clément DE L'HAMAIDE  - http://equipe-flightgear.forumactif.com/u115
+ Copyright (C) 2012  Christian THIRIOT (PATTEN)  - http://equipe-flightgear.forumactif.com/u114
+
+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2 of the
+ License, or (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program; if not see <http://www.gnu.org/licenses/>.
+-->
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>VitreInt</object-name>
+    <object-name>VerriereInt</object-name>
+    <object-name>FuselageInt</object-name>
+    <object-name>joint_verriere</object-name>
+    <object-name>support_throttle</object-name>
+    <object-name>throttle</object-name>
+    <object-name>bielle_throttle</object-name>
+    <object-name>trim-wheel</object-name>
+  </animation>
+
+  <!-- Disable glass -->
+  <animation>
+    <type>select</type>
+    <object-name>VitreInt</object-name>
+    <object-name>VerriereInt</object-name>
+    <condition>
+      <property>sim/model/config/glass-reflection</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Cap10B/Models/Effects/glass_shader.png</texture>
+    <object-name>VitreInt</object-name>
+    <object-name>VerriereInt</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>VitreInt</object-name>
+    <object-name>VerriereInt</object-name>
+  </animation>
+
+  <!-- Trim wheel -->
+  <animation>
+    <type>rotate</type>
+    <object-name>trim-wheel</object-name>
+    <property>controls/flight/elevator-trim</property>
+    <factor>90</factor>
+    <center>
+      <x-m> -0.04307 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.18200 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Throttle pilot -->
+  <animation>
+    <type>rotate</type>
+    <object-name>throttle</object-name>
+    <property>controls/engines/engine[0]/throttle</property>
+    <factor>40</factor>
+    <center>
+      <x-m> -0.220 </x-m>
+      <y-m> -0.549 </y-m>
+      <z-m> -0.071 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>bielle_throttle</object-name>
+    <property>controls/engines/engine[0]/throttle</property>
+    <factor>0.06</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>throttle</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.05</interval-sec>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/throttle-coupled</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+        <script>cap10b.set_levers("throttle",0,-1,1);</script>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/throttle-coupled</property>
+          <value>1</value>
+        </binding>
+      </mod-up>
+    </action>
+  </animation>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -0.01 </x-m>
+      <y-m> -0.28 </y-m>
+      <z-m> -0.14 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Planche de bord -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>  
+      <y-m>  0.000 </y-m>  
+      <z-m>  0.000 </z-m>  
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Seats/sieges.xml</path>
+    <offsets>
+      <x-m>  0.2898 </x-m>
+      <y-m>  0.000 </y-m>  
+      <z-m> -0.2715 </z-m>  
+    </offsets>
+  </model>
+
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Handle/handle.xml</path>
+    <offsets>
+      <x-m> -0.211 </x-m>
+      <y-m>  0.000 </y-m>  
+      <z-m> -0.286 </z-m>  
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Palonnier/palonnier.xml</path>
+    <offsets>
+      <x-m> -0.580 </x-m>
+      <y-m>  0.000 </y-m>  
+      <z-m> -0.330 </z-m>  
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Flaps/flaps.xml</path>
+    <offsets>
+      <x-m>  0.380 </x-m>
+      <y-m>  0.000 </y-m>  
+      <z-m> -0.300 </z-m>  
+    </offsets>
+  </model>
+
+</PropertyList>
+

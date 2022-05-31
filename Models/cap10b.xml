@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ cap10b-set.xml  - Cap10B by PAF team  - http://equipe-flightgear.forumactif.com
+
+ Written by Flavien BLANC
+ Modified by PAF team  - April 2012
+
+ Copyright (C) 2011-2012  Flavien BLANC  - http://equipe-flightgear.forumactif.com/u56
+ Copyright (C) 2012  Clément DE L'HAMAIDE  - http://equipe-flightgear.forumactif.com/u115
+
+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2 of the
+ License, or (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program; if not see <http://www.gnu.org/licenses/>.
+-->
+
+<PropertyList>
+
+  <path>cap10b.ac</path>
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/Cap10B/Models/Liveries", 10);
+
+
+
+      print("Load Cap10B by PAF team");
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>fuselage</object-name>
+    <object-name>cone</object-name>
+    <object-name>ailes</object-name>
+    <object-name>jambeg</object-name>
+    <object-name>jambed</object-name>
+    <object-name>roueg</object-name>
+    <object-name>ailerong</object-name>
+    <object-name>voletg</object-name>
+    <object-name>amortisseurg</object-name>
+    <object-name>jambed</object-name>
+    <object-name>roued</object-name>
+    <object-name>ailerond</object-name>
+    <object-name>voletd</object-name>
+    <object-name>amortisseurd</object-name>
+    <object-name>antenne</object-name>
+    <object-name>roueA</object-name>
+    <object-name>poids</object-name>
+    <object-name>pitot</object-name>
+    <object-name>helice</object-name>
+    <object-name>directiontrim</object-name>
+    <object-name>trimprof</object-name>
+    <object-name>support-canopy</object-name>
+    <object-name>RessortRoulette</object-name>
+    <object-name>SupportRoulette</object-name>
+    <object-name>FourcheRoulette</object-name>
+    
+    <!-- Objets transparents -->
+    <object-name>vitre</object-name>
+    <object-name>verriere</object-name>
+  </animation>
+    
+   <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>cone</object-name>
+    <object-name>ailes</object-name>
+    <object-name>jambeg</object-name>
+    <object-name>jambed</object-name>
+    <object-name>roueg</object-name>
+    <object-name>ailerong</object-name>
+    <object-name>voletg</object-name>
+    <object-name>amortisseurg</object-name>
+    <object-name>jambed</object-name>
+    <object-name>roued</object-name>
+    <object-name>ailerond</object-name>
+    <object-name>voletd</object-name>
+    <object-name>amortisseurd</object-name>
+    <object-name>antenne</object-name>
+    <object-name>roueA</object-name>
+    <object-name>poids</object-name>
+    <object-name>pitot</object-name>
+    <object-name>directiontrim</object-name>
+    <object-name>trimprof</object-name>
+    <object-name>support-canopy</object-name>
+    <object-name>derive</object-name>
+    <object-name>direction</object-name>
+    <object-name>carenaged</object-name>
+    <object-name>carenageg</object-name>
+    <object-name>palonniers</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>poidsd</object-name>
+    <object-name>poidsg</object-name>
+    
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+
+    <!--<diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>-->
+
+    <shininess-prop>shininess</shininess-prop>
+
+  </animation>
+  
+  <effect>
+    <inherits-from>Aircraft/Cap10B/Models/Effects/cap10-effects</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>cone</object-name>
+    <object-name>ailes</object-name>
+    <object-name>jambeg</object-name>
+    <object-name>jambed</object-name>
+    <object-name>roueg</object-name>
+    <object-name>ailerong</object-name>
+    <object-name>voletg</object-name>
+    <object-name>amortisseurg</object-name>
+    <object-name>jambed</object-name>
+    <object-name>roued</object-name>
+    <object-name>ailerond</object-name>
+    <object-name>voletd</object-name>
+    <object-name>amortisseurd</object-name>
+    <object-name>antenne</object-name>
+    <object-name>roueA</object-name>
+    <object-name>poids</object-name>
+    <object-name>pitot</object-name>
+    <object-name>helice</object-name>
+    <object-name>directiontrim</object-name>
+    <object-name>trimprof</object-name>
+    <object-name>support-canopy</object-name>
+    <object-name>derive</object-name>
+    <object-name>direction</object-name>
+    <object-name>carenaged</object-name>
+    <object-name>carenageg</object-name>
+    <object-name>palonniers</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>poidsd</object-name>
+    <object-name>poidsg</object-name>
+  </effect>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Cap10B/Models/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+    <object-name>verriere</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+    <object-name>verriere</object-name>
+  </animation>
+
+ <!--model>
+        <name>shadow</name>
+        <path>Aircraft/Cap10B/Models/shadow.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0.05</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model-->
+
+
+  <!-- Effet de touché -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/wing-left.xml</path>
+    <offsets>
+      <x-m>  0.064 </x-m>
+      <y-m> -3.932 </y-m>
+      <z-m> -0.104 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/wing-right.xml</path>
+    <offsets>
+      <x-m>  0.064 </x-m>
+      <y-m>  3.932 </y-m>
+      <z-m> -0.104 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/before-tail.xml</path>
+    <offsets>
+      <x-m>  3.7338 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -0.2894 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/after-tail.xml</path>
+    <offsets>
+      <x-m>  3.9924 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -0.2818 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/fuselage-rear-center.xml</path>
+    <offsets>
+      <x-m>  1.2007 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -0.4259 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/egt-left.xml</path>
+    <offsets>
+      <x-m>  -1.0162 </x-m>
+      <y-m>  -0.1859 </y-m>
+      <z-m>  -0.5202 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/egt-right.xml</path>
+    <offsets>
+      <x-m>  -1.0162 </x-m>
+      <y-m>   0.1859 </y-m>
+      <z-m>  -0.5202 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/fuselage-center.xml</path>
+    <offsets>
+      <x-m>  -0.5482 </x-m>
+      <y-m>   0.0000 </y-m>
+      <z-m>  -0.4608 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/fuselage-left.xml</path>
+    <offsets>
+      <x-m>  -0.5492 </x-m>
+      <y-m>  -0.4630 </y-m>
+      <z-m>  -0.4614 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/fuselage-right.xml</path>
+    <offsets>
+      <x-m>  -0.5492 </x-m>
+      <y-m>   0.4630 </y-m>
+      <z-m>  -0.4614 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/wing0-left.xml</path>
+    <offsets>
+      <x-m>  -0.4159 </x-m>
+      <y-m>  -0.5122 </y-m>
+      <z-m>  -0.4057 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/wing0-right.xml</path>
+    <offsets>
+      <x-m>  -0.4159 </x-m>
+      <y-m>   0.5122 </y-m>
+      <z-m>  -0.4057 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/wing1-left.xml</path>
+    <offsets>
+      <x-m>  -0.05624 </x-m>
+      <y-m>  -0.9858 </y-m>
+      <z-m>  -0.3965 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/wing1-right.xml</path>
+    <offsets>
+      <x-m>  -0.05624 </x-m>
+      <y-m>   0.9858 </y-m>
+      <z-m>  -0.3965 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/wing2-left.xml</path>
+    <offsets>
+      <x-m>  -0.05624 </x-m>
+      <y-m>  -1.8681 </y-m>
+      <z-m>  -0.3312 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/wing2-right.xml</path>
+    <offsets>
+      <x-m>  -0.05624 </x-m>
+      <y-m>   1.8681 </y-m>
+      <z-m>  -0.3312 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/poids-left.xml</path>
+    <offsets>
+     <x-m>   0.4684 </x-m>
+     <y-m>  -3.5505 </y-m>
+     <z-m>  -0.2577 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/poids-right.xml</path>
+    <offsets>
+     <x-m>   0.4684 </x-m>
+     <y-m>   3.5505 </y-m>
+     <z-m>  -0.2577 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/fuselage-front-center.xml</path>
+    <offsets>
+      <x-m>  -1.4112 </x-m>
+      <y-m>   0.0000 </y-m>
+      <z-m>  -0.4041 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/fuselage-front-left.xml</path>
+    <offsets>
+     <x-m>  -1.4112 </x-m>
+     <y-m>  -0.4214 </y-m>
+     <z-m>  -0.3971 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/fuselage-front-right.xml</path>
+    <offsets>
+     <x-m>  -1.4112 </x-m>
+     <y-m>   0.4214 </y-m>
+     <z-m>  -0.3971 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/elevator-left.xml</path>
+    <offsets>
+     <x-m>  3.4767 </x-m>
+     <y-m> -1.2955 </y-m>
+     <z-m>  0.1342 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Spark/elevator-right.xml</path>
+    <offsets>
+     <x-m>  3.4767 </x-m>
+     <y-m>  1.2955 </y-m>
+     <z-m>  0.1342 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Particules pour OSG -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Smoke/smoke.xml</path>
+    <offsets>
+      <x-m> -0.150 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.733 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Cranking effects -->
+  <!-- Left -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -1.099 </x-m>
+      <y-m> -0.190 </y-m>
+      <z-m> -0.497 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>  80 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Right -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Effects/Cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -1.099 </x-m>
+      <y-m>  0.163 </y-m>
+      <z-m> -0.497 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>  80 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- Interior -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/interior.xml</path>
+    <usage>interior</usage>
+  </model>
+  
+   <animation>
+    <name>HeliceComplete</name>
+    <object-name>helice-ge-tourn</object-name>
+    <object-name>helice</object-name>
+    <object-name>cone</object-name>
+  </animation>
+
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>helice-ge-tourn</object-name>
+    <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
+  </effect>
+  
+  <!-- Sélection de l'objet visible en fonction des rpm -->
+  <animation>
+    <type>select</type>
+    <object-name>helice-ge-tourn</object-name>
+    <condition>
+      <greater-than>
+        <property>sim/multiplay/generic/int[9]</property>
+        <value>2700</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>helice</object-name>
+    <condition>
+      <less-than>
+        <property>sim/multiplay/generic/int[9]</property>
+	<value>400</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>helice</object-name>
+    <object-name>cone</object-name>
+    <property>sim/multiplay/generic/int[9]</property>
+    <factor> 1 </factor>
+    <center>
+      <x-m> -1.897 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.015 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>helice-ge-tourn</object-name>
+    <property>sim/multiplay/generic/int[9]</property>
+    <factor> 1 </factor>
+    <center>
+      <x-m> -1.897 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.015 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Gouverne de profondeur -->
+  <animation>
+    <type>rotate</type>
+    <object-name>profondeur</object-name>
+    <object-name>trimprof</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> 25 </factor>   <!-- braquage +25° -25° -->
+    <center>
+      <x-m> 3.645 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.176 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Gouverne de direction -->
+  <animation>
+    <type>rotate</type>
+    <object-name>directiontrim</object-name>
+    <object-name>palonniers</object-name>
+    <property>surface-positions/rudder-pos-norm</property>    
+    <factor>18</factor>  <!-- braquage +18° -18° -->
+    <center>
+      <x-m> 3.890 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.278 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+   <!-- ailerons -->
+  <animation>
+    <type>rotate</type>
+    <object-name>ailerong</object-name>
+    <object-name>poidsg</object-name>        
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> -15 </factor>
+    <center>
+     <x-m>0.616529</x-m>
+     <y-m>-1.330181</y-m>
+     <z-m>-0.306911</z-m>
+    </center>    
+    <axis>
+     <x>-0.046311</x>
+     <y>-0.315068</y>
+     <z>0.021467</z>
+   </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>ailerond</object-name>
+    <object-name>poidsd</object-name>    
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor> -15 </factor>
+    <center>
+     <x-m>0.616529</x-m>
+     <y-m>1.330181</y-m>
+     <z-m>-0.306911</z-m>
+    </center>        
+    <axis>
+    <x>-0.046311</x>
+    <y>0.315068</y>
+    <z>0.021467</z>
+   </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>amortisseurg</object-name>
+    <object-name>roueg</object-name>
+    <object-name>jambeg</object-name>
+    <object-name>carenageg</object-name>
+    <condition>
+      <not><property>sim/multiplay/generic/int[14]</property></not>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>amortisseurd</object-name>
+    <object-name>roued</object-name>
+    <object-name>jambed</object-name>
+    <object-name>carenaged</object-name>
+    <condition>
+      <not><property>sim/multiplay/generic/int[15]</property></not>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>roueA</object-name>
+    <object-name>RessortRoulette</object-name>
+    <object-name>SupportRoulette</object-name>
+    <object-name>FourcheRoulette</object-name>
+    <condition>
+      <not><property>sim/multiplay/generic/int[16]</property></not>
+    </condition>
+  </animation>
+
+	<!--Armature.010-->
+	<animation>
+		<type>translate</type>
+		<object-name>amortisseurg</object-name>
+		<object-name>roueg</object-name>
+		<object-name>carenageg</object-name>
+		<property>gear/gear[0]/compression-norm</property>
+		<factor>1.000000</factor>
+		<axis>
+			<x>-0.3503</x>
+			<y>0.0027</y>
+			<z>-0.9366</z>
+		</axis>
+		<interpolation>
+			<entry>
+				<ind>0.0000</ind>
+				<dep>0.0000</dep>
+			</entry>
+			<entry>
+				<ind>1.0000</ind>
+				<dep>-0.2000</dep>
+			</entry>
+		</interpolation>
+	</animation>
+	<!--Armature.005-->
+	<animation>
+		<type>spin</type>
+		<object-name>roueg</object-name>
+		<property>gear/gear[0]/rollspeed-ms</property>
+		<factor>1.0</factor>
+		<center>
+			<x-m>-0.4520</x-m>
+			<y-m>-0.9840</y-m>
+			<z-m>-0.9490</z-m>
+		</center>
+		<axis>
+			<x>0.0000</x>
+			<y>-1.0000</y>
+			<z>0.0000</z>
+		</axis>
+	</animation>
+	<!--Armature.011-->
+	<animation>
+		<type>translate</type>
+		<object-name>amortisseurd</object-name>
+		<object-name>roued</object-name>
+		<object-name>carenaged</object-name>
+		<property>gear/gear[1]/compression-norm</property>
+		<factor>1.000000</factor>
+		<axis>
+			<x>-0.3503</x>
+			<y>0.0027</y>
+			<z>-0.9366</z>
+		</axis>
+		<interpolation>
+			<entry>
+				<ind>0.0000</ind>
+				<dep>0.0000</dep>
+			</entry>
+			<entry>
+				<ind>1.0000</ind>
+				<dep>-0.2000</dep>
+			</entry>
+		</interpolation>
+	</animation>
+	<!--Armature.006-->
+	<animation>
+		<type>spin</type>
+		<object-name>roued</object-name>
+		<property>gear/gear[1]/rollspeed-ms</property>
+		<factor>1.0</factor>
+		<center>
+			<x-m>-0.4520</x-m>
+			<y-m>0.9840</y-m>
+			<z-m>-0.9490</z-m>
+		</center>
+		<axis>
+			<x>0.0000</x>
+			<y>-1.0000</y>
+			<z>0.0000</z>
+		</axis>
+	</animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>roueA</object-name>
+    <property>gear/gear[2]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  3.891 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.332 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -0.104384 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Volets -->
+  <animation>
+    <type>rotate</type>
+    <object-name>voletg</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> 40 </factor>
+    <center>
+      <x-m>  0.617 </x-m>
+      <y-m> -1.330 </y-m>
+      <z-m> -0.307 </z-m>
+    </center>     
+     <axis>
+      <x>  0.000 </x>
+      <y>1.335558</y>
+      <z>-0.096573</z>
+     </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>voletd</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> -40 </factor>
+    <center>
+      <x-m>  0.617 </x-m>
+      <y-m>  1.330 </y-m>
+      <z-m> -0.307 </z-m>
+    </center>     
+     <axis>
+      <x> 0.000   </x>
+      <y>-1.335558</y>
+      <z>-0.096573</z>
+     </axis>
+  </animation>
+
+  <!-- Ajout des effets lumineux -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Lights/NavLightL.xml</path>
+    <condition>
+      <not><property>/sim/rendering/rembrandt/enabled</property></not>
+    </condition>
+    <offsets>
+      <x-m> -0.064 </x-m>
+      <y-m> -4.027 </y-m>
+      <z-m> -0.105 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Lights/NavLightL-rembrandt.xml</path>
+    <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <offsets>
+      <x-m> -0.064 </x-m>
+      <y-m> -4.027 </y-m>
+      <z-m> -0.105 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!--stobe-light left -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Lights/StrobeLight.xml</path>
+    <condition>
+      <not><property>/sim/rendering/rembrandt/enabled</property></not>
+    </condition>
+    <offsets>
+      <x-m> -0.064 </x-m>
+      <y-m> -4.027 </y-m>
+      <z-m> -0.105 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Lights/StrobeLight-rembrandt.xml</path>
+    <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <offsets>
+      <x-m> -0.064 </x-m>
+      <y-m> -4.027 </y-m>
+      <z-m> -0.105 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Lights/NavLightR.xml</path>
+    <condition>
+      <not><property>/sim/rendering/rembrandt/enabled</property></not>
+    </condition>
+    <offsets>
+      <x-m> -0.064 </x-m>
+      <y-m>  4.027 </y-m>
+      <z-m> -0.105 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Lights/NavLightR-rembrandt.xml</path>
+    <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <offsets>
+      <x-m> -0.064 </x-m>
+      <y-m>  4.027 </y-m>
+      <z-m> -0.105 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!--stobe-light right -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Lights/StrobeLight.xml</path>
+    <condition>
+      <not><property>/sim/rendering/rembrandt/enabled</property></not>
+    </condition>
+    <offsets>
+      <x-m> -0.064 </x-m>
+      <y-m>  4.027 </y-m>
+      <z-m> -0.105 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Lights/StrobeLight-rembrandt.xml</path>
+    <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <offsets>
+      <x-m> -0.064 </x-m>
+      <y-m>  4.027 </y-m>
+      <z-m> -0.105 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!--stobe-light tail -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Lights/StrobeLight.xml</path>
+    <condition>
+      <not><property>/sim/rendering/rembrandt/enabled</property></not>
+    </condition>
+    <offsets>
+      <x-m> 3.748 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 1.145 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Lights/StrobeLight-rembrandt.xml</path>
+    <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <offsets>
+      <x-m> 3.748 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 1.145 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Lights/LandingLight.xml</path>
+    <condition>
+      <not><property>/sim/rendering/rembrandt/enabled</property></not>
+    </condition>
+    <offsets>
+      <x-m> -1.687 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.305 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -15 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cap10B/Models/Lights/LandingLight-rembrandt.xml</path>
+    <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <offsets>
+      <x-m> -1.687 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.305 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -15 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+  
+</PropertyList>
+

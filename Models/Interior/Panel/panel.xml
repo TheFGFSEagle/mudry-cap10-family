@@ -1,0 +1,1229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ cap10b-set.xml  - Cap10B by PAF team  - http://equipe-flightgear.forumactif.com
+
+ Written by Flavien BLANC
+ Modified by PAF team  - April 2012
+
+ Copyright (C) 2011-2012  Flavien BLANC  - http://equipe-flightgear.forumactif.com/u56
+ Copyright (C) 2012  Clément DE L'HAMAIDE  - http://equipe-flightgear.forumactif.com/u115
+ Copyright (C) 2012  Christian THIRIOT (PATTEN)  - http://equipe-flightgear.forumactif.com/u114
+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2 of the
+ License, or (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program; if not see <http://www.gnu.org/licenses/>.
+-->
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+    <object-name>support</object-name>
+    <object-name>support2</object-name>
+    <object-name>manettegaz</object-name>
+    <object-name>manettepark</object-name>
+    <object-name>alarmedecrochage</object-name>
+    <object-name>supportalarme</object-name>
+    <object-name>selecteurcarburant</object-name>
+  </animation>
+
+  <!-- KX165-->
+  <model>
+    <path>Aircraft/Instruments-3d/kx165/kx165-1.xml</path>
+    <offsets>
+      <x-m> -0.214 </x-m>
+      <y-m>  0.392 </y-m>
+      <z-m>  0.218 </z-m>
+    </offsets>
+  </model>
+
+  <!-- KT76A-->
+  <model>
+    <path>Aircraft/Instruments-3d/kt76a/kt76a.xml</path>
+    <offsets>
+      <x-m> -0.214 </x-m>
+      <y-m>  0.392 </y-m>
+      <z-m>  0.162 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- badin -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Badin/badin.xml</path>
+    <offsets>
+      <x-m> -0.309 </x-m>
+      <y-m> -0.313 </y-m>
+      <z-m>  0.234 </z-m>
+    </offsets>
+  </model>
+  
+    <!-- tachymetre -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Tachymetre/tachymetre.xml</path>
+    <offsets>
+      <x-m> -0.299 </x-m>
+      <y-m> -0.419 </y-m>
+      <z-m>  0.217 </z-m>
+    </offsets>
+  </model>
+
+    <!-- bille -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Bille/bille.xml</path>
+    <offsets>
+      <x-m> -0.292 </x-m>
+      <y-m> -0.222 </y-m>
+      <z-m>  0.140 </z-m>
+    </offsets>
+  </model>
+
+<!-- bille dos -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Bille/bille_dos.xml</path>
+    <offsets>
+      <x-m> -0.297 </x-m>
+      <y-m> -0.222 </y-m>
+      <z-m>  0.308 </z-m>
+    </offsets>
+  </model>
+  
+    <!-- altimetre -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Altimetre/altimetre.xml</path>
+    <offsets>
+      <x-m> -0.309 </x-m>
+      <y-m> -0.312 </y-m>
+      <z-m>  0.144 </z-m>
+    </offsets>
+  </model>
+
+    <!-- VOR -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/VOR/VOR.xml</path>
+    <offsets>
+      <x-m> -0.214 </x-m>
+      <y-m>  0.2445 </y-m>
+      <z-m>  0.189 </z-m>
+    </offsets>
+  </model>
+
+    <!-- variometre -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Variometre/variometre.xml</path>
+    <offsets>
+      <x-m> -0.3079 </x-m>
+      <y-m> -0.132 </y-m>
+      <z-m>  0.144 </z-m>
+    </offsets>
+  </model>
+
+    <!-- Horizon artificiel -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/AI/ai.xml</path>
+    <offsets>
+      <x-m> -0.291 </x-m>
+      <y-m> -0.1335 </y-m>
+      <z-m>  0.2345 </z-m>
+    </offsets>
+  </model>
+
+    <!-- Conservateur de Cap -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/hdg/hdg.xml</path>
+    <offsets>
+      <x-m> -0.291 </x-m>
+      <y-m> -0.4169 </y-m>
+      <z-m>  0.1266 </z-m>
+    </offsets>
+  </model>
+
+  <!--jauge fuel gauche -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Fuel/fuel_left.xml</path>
+    <offsets>
+      <x-m> -0.291 </x-m>
+      <y-m>  0.043 </y-m>
+      <z-m>  0.264 </z-m>
+    </offsets>
+  </model>
+
+  <!--jauge fuel droite -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Fuel/fuel_right.xml</path>
+    <offsets>
+      <x-m> -0.291 </x-m>
+      <y-m>  0.124 </y-m>
+      <z-m>  0.264 </z-m>
+    </offsets>
+  </model>
+
+  <!--oil-temp -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/oil-temp/oil-temp.xml</path>
+    <offsets>
+      <x-m> -0.291 </x-m>
+      <y-m> -0.043 </y-m>
+      <z-m>  0.193 </z-m>
+    </offsets>
+  </model>
+
+  <!--oil-press -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/oil-press/oil-press.xml</path>
+    <offsets>
+      <x-m> -0.291 </x-m>
+      <y-m> -0.0435 </y-m>
+      <z-m>  0.129 </z-m>
+    </offsets>
+  </model>
+
+  <!--Battery -->
+  <!--<model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/oil-press/oil-press.xml</path>
+    <offsets>
+      <x-m> -0.291 </x-m>
+      <y-m>  0.045 </y-m>
+      <z-m>  0.197 </z-m>
+    </offsets>
+  </model>-->
+
+  <!--forceG -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/ForceG/forceG.xml</path>
+    <offsets>
+      <x-m> -0.291 </x-m>
+      <y-m>  0.124 </y-m>
+      <z-m>  0.197 </z-m>
+    </offsets>
+  </model>
+
+  <!-- magnetos -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Magnetos/magnetos.xml</path>
+    <offsets>
+      <x-m> -0.2939 </x-m>
+      <y-m>  0.000227 </y-m>
+      <z-m> -0.02341 </z-m>
+    </offsets>
+  </model>
+
+<!-- Garmin196 -->
+  <model>
+    <path>Aircraft/Instruments-3d/garmin196/garmin196_support1.xml</path>
+    <offsets>
+      <x-m>  -0.253 </x-m>
+      <y-m>  0.341 </y-m>
+      <z-m>  0.304 </z-m>
+    </offsets>
+  </model>
+
+  <!-- battery-switch -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/switch/battery-switch.xml</path>
+    <offsets>
+      <x-m> -0.2910 </x-m>
+      <y-m> -0.4510 </y-m>
+      <z-m>  0.0261 </z-m>
+    </offsets>
+  </model>
+
+  <!-- battery-lamp -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/lamp/battery-lamp.xml</path>
+    <offsets>
+      <x-m> -0.2910 </x-m>
+      <y-m> -0.4277 </y-m>
+      <z-m>  0.0261 </z-m>
+    </offsets>
+  </model>
+
+  <!-- nav-switch -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/switch/nav-lights-switch.xml</path>
+    <offsets>
+      <x-m> -0.2910 </x-m>
+      <y-m> -0.3131 </y-m>
+      <z-m>  0.0261 </z-m>
+    </offsets>
+  </model>
+
+  <!-- landing-switch -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/switch/landing-lights-switch.xml</path>
+    <offsets>
+      <x-m> -0.2910 </x-m>
+      <y-m> -0.2034 </y-m>
+      <z-m>  0.0261 </z-m>
+    </offsets>
+  </model>
+
+  <!-- smoke-switch -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/switch/smoke-switch.xml</path>
+    <offsets>
+      <x-m> -0.2910 </x-m>
+      <y-m>  0.2099 </y-m>
+      <z-m>  0.0261 </z-m>
+    </offsets>
+  </model>
+
+  <!-- fuel-pump-switch -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/switch/fuel-pump-switch.xml</path>
+    <offsets>
+      <x-m> -0.2910 </x-m>
+      <y-m> -0.2631 </y-m>
+      <z-m>  0.0261 </z-m>
+    </offsets>
+  </model>
+
+  <!-- fuel-pump-lamp -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/lamp/fuel-pump-lamp.xml</path>
+    <offsets>
+      <x-m> -0.2910 </x-m>
+      <y-m> -0.2423 </y-m>
+      <z-m>  0.0261 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ai-switch -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/switch/ai-switch.xml</path>
+    <offsets>
+      <x-m> -0.2910 </x-m>
+      <y-m> -0.1476 </y-m>
+      <z-m>  0.0261 </z-m>
+    </offsets>
+  </model>
+
+  <!-- hi-switch -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/switch/hi-switch.xml</path>
+    <offsets>
+      <x-m> -0.2910 </x-m>
+      <y-m> -0.1162 </y-m>
+      <z-m>  0.0261 </z-m>
+    </offsets>
+  </model>
+
+  <!-- pitot-heat-switch -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/switch/pitot-heat-switch.xml</path>
+    <offsets>
+      <x-m> -0.2910 </x-m>
+      <y-m> -0.08617 </y-m>
+      <z-m>  0.0261 </z-m>
+    </offsets>
+  </model>
+
+  <!-- pitot-heat-lamp -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/lamp/pitot-heat-lamp.xml</path>
+    <offsets>
+      <x-m> -0.2910 </x-m>
+      <y-m> -0.06053 </y-m>
+      <z-m>  0.0261 </z-m>
+    </offsets>
+  </model>
+
+  <!-- rotating-lamp -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/lamp/rotating-lamp.xml</path>
+    <offsets>
+      <x-m> -0.2910 </x-m>
+      <y-m>  0.04635 </y-m>
+      <z-m>  0.0261 </z-m>
+    </offsets>
+  </model>
+
+  <!-- rotating-switch -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/switch/rotating-switch.xml</path>
+    <offsets>
+      <x-m> -0.2910 </x-m>
+      <y-m>  0.0687 </y-m>
+      <z-m>  0.0261 </z-m>
+    </offsets>
+  </model>
+
+  <!-- front-low-fuel-lamp -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/lamp/front-low-fuel-lamp.xml</path>
+    <offsets>
+      <x-m> -0.2910 </x-m>
+      <y-m>  0.06946 </y-m>
+      <z-m>  0.3001 </z-m>
+    </offsets>
+  </model>
+
+  <!-- rear-low-fuel-lamp -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/lamp/rear-low-fuel-lamp.xml</path>
+    <offsets>
+      <x-m> -0.2910 </x-m>
+      <y-m>  0.09875 </y-m>
+      <z-m>  0.3001 </z-m>
+    </offsets>
+  </model>
+
+  <!-- low-oil-press-lamp -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/lamp/low-oil-press-lamp.xml</path>
+    <offsets>
+      <x-m> -0.2910 </x-m>
+      <y-m> -0.06858 </y-m>
+      <z-m>  0.1617 </z-m>
+    </offsets>
+  </model>
+
+  <!-- audio-plug-left -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/audio-plug/audio-plug.xml</path>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m> -0.4995 </y-m>
+      <z-m>  0.03172 </z-m>
+    </offsets>
+  </model>
+
+  <!-- audio-plug-right -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/audio-plug/audio-plug.xml</path>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m>  0.4995 </y-m>
+      <z-m>  0.03172 </z-m>
+    </offsets>
+  </model>
+
+  <!-- horameter -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/horameter/horameter.xml</path>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m>  0.0438 </y-m>
+      <z-m>  0.1303 </z-m>
+    </offsets>
+  </model>
+
+  <!-- chrono -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/chronometer/chrono.xml</path>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m>  0.04463 </y-m>
+      <z-m>  0.1955 </z-m>
+    </offsets>
+  </model>
+
+  <!-- manifold-pressure -->
+  <model>
+    <path>Aircraft/Cap10B/Models/Interior/Panel/Instruments/Man/man.xml</path>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m> -0.2236 </y-m>
+      <z-m>  0.2341 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- manette des gaz -->
+  
+  <animation>
+   <type>translate</type>
+   <object-name>manettegaz</object-name>
+   <property>controls/engines/engine/throttle</property>
+   <factor>0.085</factor>
+     <axis>
+      <x>-1</x>
+      <y> 0</y>
+      <z> 0</z>
+     </axis>   
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>manettegaz</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.05</interval-sec>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/throttle-coupled</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+        <script>cap10b.set_levers("throttle",0,-1,1);</script>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/throttle-coupled</property>
+          <value>1</value>
+        </binding>
+      </mod-up>
+    </action>
+  </animation>
+  
+  <!-- manette de mixture -->
+  
+  <animation>
+   <type>translate</type>
+   <object-name>manettemixture</object-name>
+   <property>controls/engines/engine/mixture</property>
+   <factor>0.085</factor>
+     <axis>
+      <x>-1</x>
+      <y> 0</y>
+      <z> 0</z>
+     </axis>   
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>manettemixture</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.05</interval-sec>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/mixture-coupled</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+        <script>cap10b.set_levers("mixture",0,-1,1);</script>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/mixture-coupled</property>
+          <value>1</value>
+        </binding>
+      </mod-up>
+    </action>
+  </animation>
+  
+  <!-- manette frein de park -->
+  <animation>
+   <type>translate</type>
+   <object-name>manettepark</object-name>
+   <property>controls/gear/brake-parking</property>
+   <factor>0.03</factor>
+     <axis>
+      <x> 1</x>
+      <y> 0</y>
+      <z> 0</z>
+     </axis>   
+  </animation>
+
+  <animation>
+   <type>translate</type>
+   <object-name>manettepark</object-name>
+   <property>controls/gear/brake-left</property>
+   <condition>
+     <not><property>controls/gear/brake-parking</property></not>
+   </condition>
+   <factor>0.015</factor>
+     <axis>
+      <x> 1</x>
+      <y> 0</y>
+      <z> 0</z>
+     </axis>   
+  </animation>
+
+  <animation>
+   <type>translate</type>
+   <object-name>manettepark</object-name>
+   <property>controls/gear/brake-right</property>
+   <condition>
+     <and>
+       <not><property>controls/gear/brake-parking</property></not>
+     </and>
+   </condition>
+   <factor>0.015</factor>
+     <axis>
+      <x> 1</x>
+      <y> 0</y>
+      <z> 0</z>
+     </axis>   
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>manettepark</object-name>
+    <action>
+      <name>park on</name>
+      <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/gear/brake-parking</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- Stall alarm -->
+  <animation>
+    <type>material</type>
+    <object-name>alarmedecrochage</object-name>
+    <condition>
+      <and>
+        <greater-than>
+          <property>fdm/jsbsim/aero/alpha-wing-rad</property>
+          <value>0.279</value>
+        </greater-than>
+        <not>
+          <property>gear/gear[0]/wow</property>
+          <property>gear/gear[1]/wow</property>
+          <property>gear/gear[2]/wow</property>
+        </not>
+      </and>
+    </condition>
+    <emission>
+      <red>   0.8 </red>
+      <green> 0.2 </green>
+      <blue>  0.0 </blue>
+      <factor-prop>systems/electrical/volts</factor-prop>
+    </emission>
+  </animation>
+
+  <!-- starter -->
+  <animation>
+   <type>pick</type>
+   <object-name>starter</object-name>
+   <visible>true</visible>
+   <action>
+     <name>starter</name>
+     <button>0</button>
+     <binding>
+       <command>property-assign</command>
+       <property>/controls/engines/engine/starter_cmd</property>
+       <value>1</value>
+       <condition>
+         <not-equals>
+           <property>controls/fuel/selected-tank</property>
+           <value>0</value>
+         </not-equals>
+       </condition>
+     </binding>
+     <mod-up>
+       <binding>
+         <command>property-assign</command>
+         <property>/controls/engines/engine/starter_cmd</property>
+         <value>0</value>
+       </binding>
+     </mod-up>
+   </action>
+  </animation>
+
+  <animation> 
+    <type>translate</type>
+    <object-name>starter</object-name>
+    <property>controls/engines/engine/starter_cmd-pos</property>
+    <factor>-0.012</factor>
+    <axis> 
+      <x>  1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Sélecteur carburant -->
+  <animation>
+    <type>pick</type>
+    <object-name>selecteurcarburant</object-name>
+   <action>
+     <name>decrease mags: click</name>
+     <button>0</button>
+     <binding>
+       <command>property-adjust</command>
+       <property>controls/fuel/selected-tank</property>
+       <step>1</step>
+       <min>-1</min>
+       <max>2</max>
+       <wrap>true</wrap>
+     </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/click</property>
+      </binding>
+   </action>
+   <action>
+     <name>decrease mags: scroll</name>
+     <button>3</button>
+     <binding>
+       <command>property-adjust</command>
+       <property>controls/fuel/selected-tank</property>
+       <step>1</step>
+       <min>-1</min>
+       <max>1</max>
+     </binding>
+   </action>
+   <action>
+     <name>increase mags: scroll</name>
+     <button>4</button>
+     <binding>
+       <command>property-adjust</command>
+       <property>controls/fuel/selected-tank</property>
+       <step>-1</step>
+       <min>-1</min>
+       <max>1</max>
+     </binding>
+   </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>selecteurcarburant</object-name>
+    <property>controls/fuel/selected-tank-pos</property>
+    <factor> -90 </factor>
+    <center>
+      <x-m> -0.2805 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -0.1011 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- TEXT OSG -->
+  <text>
+    <name>panelText</name>
+    <type type="string">literal</type>
+    <text type="string">Master switch</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.014</character-size>
+    <character-aspect-ratio type="double">2</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.05</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m> -0.4513 </y-m>
+      <z-m>  0.01038 </z-m>
+    </offsets>
+  </text>
+
+  <text>
+    <name>helpText</name>
+    <type type="string">literal</type>
+    <text type="string">Parking brake</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.014</character-size>
+    <character-aspect-ratio type="double">1</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.06</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.2809 </x-m>
+      <y-m> -0.3740 </y-m>
+      <z-m>  0.0520 </z-m>
+    </offsets>
+  </text>
+
+  <text>
+    <name>panelText</name>
+    <type type="string">literal</type>
+    <text type="string">Position lights</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.014</character-size>
+    <character-aspect-ratio type="double">2</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.05</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m> -0.3133 </y-m>
+      <z-m>  0.00918 </z-m>
+    </offsets>
+  </text>
+
+  <text>
+    <name>panelText</name>
+    <type type="string">literal</type>
+    <text type="string">Electric pump</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.014</character-size>
+    <character-aspect-ratio type="double">2</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.05</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m> -0.2631 </y-m>
+      <z-m>  0.00918 </z-m>
+    </offsets>
+  </text>
+
+  <text>
+    <name>panelText</name>
+    <type type="string">literal</type>
+    <text type="string">Horizon</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.014</character-size>
+    <character-aspect-ratio type="double">2</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.05</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m> -0.1483 </y-m>
+      <z-m>  0.01038 </z-m>
+    </offsets>
+  </text>
+
+  <text>
+    <name>panelText</name>
+    <type type="string">literal</type>
+    <text type="string">Directionnal</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.014</character-size>
+    <character-aspect-ratio type="double">2</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.05</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m> -0.1164 </y-m>
+      <z-m>  0.01038 </z-m>
+    </offsets>
+  </text>
+
+  <text>
+    <name>panelText</name>
+    <type type="string">literal</type>
+    <text type="string">Pitot heat</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.014</character-size>
+    <character-aspect-ratio type="double">2</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.05</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m> -0.08469 </y-m>
+      <z-m>  0.01038 </z-m>
+    </offsets>
+  </text>
+
+  <text>
+    <name>helpText</name>
+    <type type="string">literal</type>
+    <text type="string">Magnetos</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.014</character-size>
+    <character-aspect-ratio type="double">1</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.06</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m> -0.0470 </y-m>
+      <z-m> -0.0220 </z-m>
+    </offsets>
+  </text>
+
+  <text>
+    <name>helpText</name>
+    <type type="string">literal</type>
+    <text type="string">Starter</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.014</character-size>
+    <character-aspect-ratio type="double">1</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.06</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m> -0.04469 </y-m>
+      <z-m> -0.06500 </z-m>
+    </offsets>
+  </text>
+
+  <text>
+    <name>helpText</name>
+    <type type="string">literal</type>
+    <text type="string">Fuel valve</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.014</character-size>
+    <character-aspect-ratio type="double">1</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.06</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m> -0.04469 </y-m>
+      <z-m> -0.10538 </z-m>
+    </offsets>
+  </text>
+
+  <text>
+    <name>panelText</name>
+    <type type="string">literal</type>
+    <text type="string">Strobe light</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.014</character-size>
+    <character-aspect-ratio type="double">2</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.05</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m>  0.06907 </y-m>
+      <z-m>  0.00918 </z-m>
+    </offsets>
+  </text>
+
+  <text>
+    <name>panelText</name>
+    <type type="string">literal</type>
+    <text type="string">Landing light</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.014</character-size>
+    <character-aspect-ratio type="double">2</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.05</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m> -0.2034 </y-m>
+      <z-m>  0.00918 </z-m>
+    </offsets>
+  </text>
+
+  <text>
+    <name>panelText</name>
+    <type type="string">literal</type>
+    <text type="string">Smoke</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.014</character-size>
+    <character-aspect-ratio type="double">2</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.05</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m>  0.2099 </y-m>
+      <z-m>  0.00918 </z-m>
+    </offsets>
+  </text>
+
+  <text>
+    <name>panelText</name>
+    <type type="string">literal</type>
+    <text type="string">FRONT</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.010</character-size>
+    <character-aspect-ratio type="double">1</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.05</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m>  0.04260 </y-m>
+      <z-m>  0.3010 </z-m>
+    </offsets>
+  </text>
+
+  <text>
+    <name>panelText</name>
+    <type type="string">literal</type>
+    <text type="string">REAR</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.010</character-size>
+    <character-aspect-ratio type="double">1</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.05</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m>  0.1242 </y-m>
+      <z-m>  0.3010 </z-m>
+    </offsets>
+  </text>
+
+  <text>
+    <name>panelText</name>
+    <type type="string">literal</type>
+    <text type="string">OIL      TEMP</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.007</character-size>
+    <character-aspect-ratio type="double">1</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.03</max-height>
+    <max-width>0.03</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m> -0.08106 </y-m>
+      <z-m>  0.2054 </z-m>
+    </offsets>
+  </text>
+
+  <text>
+    <name>panelText</name>
+    <type type="string">literal</type>
+    <text type="string">OIL      PRESS</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.007</character-size>
+    <character-aspect-ratio type="double">1</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.03</max-height>
+    <max-width>0.03</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m> -0.08004 </y-m>
+      <z-m>  0.1480 </z-m>
+    </offsets>
+  </text>
+
+  <text>
+    <name>panelText</name>
+    <type type="string">literal</type>
+    <text type="string">VA       235 km/h</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.007</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.03</max-height>
+    <max-width>0.03</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m> -0.3144 </y-m>
+      <z-m>  0.2881 </z-m>
+    </offsets>
+  </text>
+
+  <text>
+    <name>panelText</name>
+    <type type="string">text-value</type>
+    <property type="string">sim/multiplay/callsign</property>
+    <format type="string">%s</format>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.014</character-size>
+    <character-aspect-ratio type="double">1</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.05</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m> -0.3859 </y-m>
+      <z-m>  0.2697 </z-m>
+    </offsets>
+  </text>
+
+  <text>
+    <name>panelText</name>
+    <type type="string">literal</type>
+    <text type="string">MIXTURE      RICH IN</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.03</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.2909 </x-m>
+      <y-m> -0.5258 </y-m>
+      <z-m>  0.1726 </z-m>
+    </offsets>
+  </text>
+
+  <animation>
+    <type>material</type>
+    <object-name>panelText</object-name>
+    <emission>
+      <red>   0.0 </red>
+      <green> 0.0 </green>
+      <blue>  0.0 </blue>
+    </emission>
+    <ambient>
+      <red>   0.0 </red>
+      <green> 0.0 </green>
+      <blue>  0.0 </blue>
+    </ambient>
+    <diffuse>
+      <red>   0.0 </red>
+      <green> 0.0 </green>
+      <blue>  0.0 </blue>
+    </diffuse>
+    <specular>
+      <red>   0.0 </red>
+      <green> 0.0 </green>
+      <blue>  0.0 </blue>
+    </specular>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>helpText</object-name>
+    <emission>
+      <red>   1.0 </red>
+      <green> 1.0 </green>
+      <blue>  0.0 </blue>
+    </emission>
+    <ambient>
+      <red>   1.0 </red>
+      <green> 1.0 </green>
+      <blue>  0.0 </blue>
+    </ambient>
+    <diffuse>
+      <red>   1.0 </red>
+      <green> 1.0 </green>
+      <blue>  0.0 </blue>
+    </diffuse>
+    <specular>
+      <red>   1.0 </red>
+      <green> 1.0 </green>
+      <blue>  0.0 </blue>
+    </specular>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>helpText</object-name>
+    <condition>
+      <property>sim/panel-hotspots</property>
+    </condition>
+  </animation>
+  
+</PropertyList>
+
