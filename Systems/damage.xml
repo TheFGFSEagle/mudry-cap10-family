@@ -3,50 +3,50 @@
 	<property value="0">repair-damage</property>
 	
 	<channel name="gear">
-		<switch name="gear/gear[0]/broken">
-			<default value="gear/gear[0]/broken"/>
+		<switch name="gear/unit[0]/broken">
+			<default value="gear/unit[0]/broken"/>
 			<test value="1">
-				gear/gear[0]/compression-ft GT 0.6
+				gear/unit[0]/compression-ft GT 0.6
 			</test>
 			<test value="0">
 				repair-damage EQ 1
 			</test>
 		</switch>
-		<switch name="gear/gear[0]/z-position">
+		<switch name="gear/unit[0]/z-position">
 			<default value="-47.05"/>
 			<test value="0">
-				gear/gear[0]/broken EQ 1
+				gear/unit[0]/broken EQ 1
 			</test>
 		</switch>
 		
-		<switch name="gear/gear[1]/broken">
-			<default value="gear/gear[1]/broken"/>
+		<switch name="gear/unit[1]/broken">
+			<default value="gear/unit[1]/broken"/>
 			<test value="1">
-				gear/gear[1]/compression-ft GT 0.6
+				gear/unit[1]/compression-ft GT 0.6
 			</test>
 			<test value="0">
 				repair-damage EQ 1
 			</test>
 		</switch>
-		<switch name="gear/gear[1]/z-position">
+		<switch name="gear/unit[1]/z-position">
 			<default value="-47.05"/>
 			<test value="0">
-				gear/gear[1]/broken EQ 1
+				gear/unit[1]/broken EQ 1
 			</test>
 		</switch>
-		<switch name="gear/gear[2]/broken">
-			<default value="gear/gear[2]/broken"/>
+		<switch name="gear/unit[2]/broken">
+			<default value="gear/unit[2]/broken"/>
 			<test value="1">
-				gear/gear[2]/compression-ft GT 0.6
+				gear/unit[2]/compression-ft GT 0.6
 			</test>
 			<test value="0">
 				repair-damage EQ 1
 			</test>
 		</switch>
-		<switch name="gear/gear[2]/z-position">
+		<switch name="gear/unit[2]/z-position">
 			<default value="-17.32"/>
 			<test value="0">
-				gear/gear[2]/broken EQ 1
+				gear/unit[2]/broken EQ 1
 			</test>
 		</switch>
 		
