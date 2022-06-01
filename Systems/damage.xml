@@ -51,7 +51,10 @@
 		</switch>
 		
 		<switch name="repair-damage">
-			<default value="0"/>
+			<default value="repair-damage"/>
+			<test value="0">
+				repair-damage EQ 1
+			</test>
 		</switch>
 	</channel>
 </system>
