@@ -73,7 +73,7 @@
 			<title>Cap10B</title>
 			<key>
 				<name>S</name>
-				<desc>Start/stop smoke</desc>
+				<desc>Start/stop   smoke</desc>
 			</key>
 			<key>
 				<name>Alt-S</name>
@@ -112,7 +112,6 @@
 	</sim>
 	
 	<controls>
-		<smoke type="bool">0</smoke>
 		<lighting>
 			<instruments-norm type="double">1</instruments-norm>
 			<panel-norm type="double">1</panel-norm>
@@ -225,6 +224,14 @@
 	
 	<input>
 		<keyboard>
+			<key n="83">
+				<name>S</name>
+				<desc>Start/stop smoke</desc>
+				<binding>
+					<command>property-toggle</command>
+					<property>controls/switches/smoke</property>
+				</binding>
+			</key>
 			<key n="115">
 				<name>s</name>
 				<desc>Starter</desc>
@@ -240,6 +247,19 @@
 						<value>0</value>
 					</binding>
 				</mod-up>
+				<mod-alt>
+					<name>Alt-S</name>
+					<desc>Cycle smoke color</desc>
+					<command>nasal</command>
+					<script><![CDATA[
+						var newColor = props.globals.getValue("/controls/switches/smoke-color") + 1;
+						if (newColor > size(cap10b.smokeColors)) {
+							var newColor = 0;
+						}
+						props.globals.setValue("/controls/switches/smoke-color", newColor);
+						gui.popupTip("New smoke color: " ~ cap10b.decodeSmokeColor(props.globals));
+					]]></script>
+				</mod-alt>
 			</key>
 		</keyboard>
 	</input>

@@ -157,31 +157,6 @@
 		</viewer>
 	</sim>
 	
-	<input>
-		<keyboard>
-			<key n="83">
-				<name>S</name>
-				<desc>Start/stop smoke</desc>
-				<binding>
-					<command>property-toggle</command>
-					<property>controls/switches/smoke</property>
-				</binding>
-				<mod-alt>
-					<desc>Cycle smoke color</desc>
-					<command>nasal</command>
-					<script><![CDATA[
-						var newColor = props.globals.getValue("/controls/switches/smoke-color") + 1;
-						if (newColor > size(cap10b.smokeColors)) {
-							var newColor = 0;
-						}
-						props.globals.setValue("/controls/switches/smoke-color", newColor);
-						gui.popupTip("New smoke color: " ~ cap10b.decodeSmokeColor(props.globals));
-					]]></script>
-				</mod-alt>
-			</key>
-		</keyboard>
-	</input>
-	
 	<nasal>
 		<!-- ############################### -->
 		<!-- ######## DUAL CONTROL ######### -->

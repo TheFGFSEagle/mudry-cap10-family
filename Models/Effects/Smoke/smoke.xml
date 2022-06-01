@@ -56,7 +56,7 @@
 		
 		<counter>
 			<particles-per-sec>
-				<value>50</value>
+				<value>30</value>
 				<spread>1</spread>
 			</particles-per-sec>
 		</counter>
@@ -64,10 +64,10 @@
 		<particle>
 			<start>
 				<color>
-					<red alias="sim/model/smoke/red"/>
-					<green alias="sim/model/smoke/green"/>
-					<blue alias="sim/model/smoke/blue"/>
-					<alpha>0.3</alpha>
+					<red><property>sim/model/smoke/red</property></red>
+					<green><property>sim/model/smoke/green</property></green>
+					<blue><property>sim/model/smoke/blue</property></blue>
+					<alpha><value>0.3</value></alpha>
 				</color>
 				<size>
 					<value>0.3</value>
@@ -75,12 +75,9 @@
 			</start>
 			<end>
 				<color>
-				<color>
-					<red alias="sim/model/smoke/red"/>
-					<green alias="sim/model/smoke/green"/>
-					<blue alias="sim/model/smoke/blue"/>
-					<alpha>0.3</alpha>
-				</color>
+					<red><property>sim/model/smoke/red</property></red>
+					<green><property>sim/model/smoke/green</property></green>
+					<blue><property>sim/model/smoke/blue</property></blue>
 					<alpha><value>0.001</value></alpha>
 				</color>
 				<size>
@@ -88,7 +85,7 @@
 				</size>
 			</end>
 			<life-sec>
-				<value>100</value>
+				<value>30</value>
 			</life-sec>
 			<mass-kg>0.001</mass-kg>
 			<radius-m>1.0</radius-m>
@@ -96,82 +93,7 @@
 		 
 		<program>
 			<fluid>air</fluid>
-			<gravity>true</gravity>
-			<wind>true</wind>
-		</program>
-	</particlesystem>
-	
-	<particlesystem>
-		<name>smoke</name>
-		<texture>smoke.png</texture>
-		
-		<condition>
-			<property>sim/multiplay/generic/int[6]</property>
-		</condition>
-		
-		<emissive>false</emissive>
-		<lighting>false</lighting>
-		<align>billboard</align>
-		<attach>world</attach>
-		
-		<placer>
-			<type>point</type>
-		</placer>
-		
-		<shooter>
-			<theta-min-deg>10</theta-min-deg>
-			<theta-max-deg>86</theta-max-deg>
-			<phi-min-deg>-1.5</phi-min-deg>
-			<phi-max-deg>8</phi-max-deg>
-			<speed-mps>
-				<value>10</value>
-				<spread>2.5</spread>
-			</speed-mps>
-		</shooter>
-		
-		<counter>
-			<particles-per-sec>
-				<value>5</value>
-				<spread>1</spread>
-			</particles-per-sec>
-		</counter>
-		
-		<particle>
-			<start>
-				<color>
-					<red alias="sim/model/smoke/red"/>
-					<green alias="sim/model/smoke/green"/>
-					<blue alias="sim/model/smoke/blue"/>
-					<alpha>0.3</alpha>
-				</color>
-				<size>
-					<value>0.3</value>
-				</size>
-			</start>
-			<end>
-				<color>
-				<color>
-					<red alias="sim/model/smoke/red"/>
-					<green alias="sim/model/smoke/green"/>
-					<blue alias="sim/model/smoke/blue"/>
-					<alpha>0.3</alpha>
-				</color>
-					<alpha><value>0.001</value></alpha>
-				</color>
-				<size>
-					<value>30.0</value>
-				</size>
-			</end>
-			<life-sec>
-				<value>600</value>
-			</life-sec>
-			<mass-kg>0.001</mass-kg>
-			<radius-m>1.0</radius-m>
-		</particle>
-		 
-		<program>
-			<fluid>air</fluid>
-			<gravity>true</gravity>
+			<gravity>false</gravity>
 			<wind>true</wind>
 		</program>
 	</particlesystem>
