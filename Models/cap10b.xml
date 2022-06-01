@@ -33,7 +33,7 @@
 			io.load_nasal("Aircraft/mudry-cap10-family/Nasal/smoke.nas", "cap10b");
 			
 			var rplayer = cmdarg();
-			rplayer.getNode("controls/switches/smoke-color", 1).alias(rplayer.getNode("sim/multiplay/generic/int[7]", 1))
+			rplayer.getNode("controls/switches/smoke-color", 1).alias(rplayer.getNode("sim/multiplay/generic/int[7]", 1));
 			copilotSmokeColorListener = setlistener(rplayer.getNode("controls/switches/smoke-color"), func { cap10b.decodeSmokeColor(rplayer) });
 		</load>
 		<unload>
