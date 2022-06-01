@@ -485,38 +485,26 @@
   <animation>
    <type>translate</type>
    <object-name>manettemixture</object-name>
-   <property>controls/engines/engine/mixture</property>
-   <factor>0.085</factor>
-     <axis>
-      <x>-1</x>
-      <y> 0</y>
-      <z> 0</z>
-     </axis>   
   </animation>
 
   <animation>
-    <type>pick</type>
+    <type>slider</type>
     <object-name>manettemixture</object-name>
+    <property>controls/engines/engine/mixture</property>
+    <factor>0.085</factor>
+    <axis>
+      <x>-1</x>
+      <y> 0</y>
+      <z> 0</z>
+    </axis>   
     <action>
-      <button>0</button>
-      <repeatable>true</repeatable>
-      <interval-sec>0.05</interval-sec>
-      <binding>
-        <command>property-assign</command>
-        <property>controls/mixture-coupled</property>
-        <value>0</value>
-      </binding>
-      <binding>
-        <command>nasal</command>
-        <script>cap10b.set_levers("mixture",0,-1,1);</script>
-      </binding>
-      <mod-up>
-        <binding>
-          <command>property-assign</command>
-          <property>controls/mixture-coupled</property>
-          <value>1</value>
-        </binding>
-      </mod-up>
+    	<binding>
+    		<command>property-adjust</command>
+    		<property>controls/engines/engine/mixture</property>
+    		<factor>0.01</factor>
+    		<min>0</min>
+    		<max>1</max>
+	</binding>
     </action>
   </animation>
   

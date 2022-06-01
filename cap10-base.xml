@@ -25,8 +25,9 @@
 
 <PropertyList>
 	<sim>
-		<aircraft-version>0.1</aircraft-version>
+		<aircraft-version>1.0</aircraft-version>
 		<status>production</status>
+		<minimum-fg-version>2017.4.0</minimum-fg-version>
 		
 		<startup>
 			<splash-texture>Cap10-splash.png</splash-texture>
@@ -55,6 +56,11 @@
 				<details-high type="bool">0</details-high>
 				<glass-reflection type="bool">0</glass-reflection>
 			</config>
+			<smoke>
+				<red type="double">0</red>
+				<green type="double">0</green>
+				<blue type="double">0</blue>
+			</smoke>
 		</model>
 		
 		<flaps>
@@ -68,6 +74,10 @@
 			<key>
 				<name>S</name>
 				<desc>Start/stop smoke</desc>
+			</key>
+			<key>
+				<name>Alt-S</name>
+				<desc>Cycle smoke color</desc>
 			</key>
 			<line/>
 			<line>_________Reports_________</line>
@@ -130,6 +140,7 @@
 			<ai-switch type="bool">0</ai-switch>
 			<hi-switch type="bool">0</hi-switch>
 			<smoke type="bool">0</smoke>
+			<smoke-color type="int">0</smoke-color>
 		</switches>
 	</controls>
 	
@@ -229,15 +240,6 @@
 						<value>0</value>
 					</binding>
 				</mod-up>
-			</key>
-			
-			<key n="83">
-				<name>S</name>
-				<desc>Start/stop smoke</desc>
-				<binding>
-					<command>property-toggle</command>
-					<property>controls/switches/smoke</property>
-				</binding>
 			</key>
 		</keyboard>
 	</input>

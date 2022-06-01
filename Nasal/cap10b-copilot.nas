@@ -182,7 +182,6 @@ global_system = func{
     setprop("/instrumentation/heading-indicator/spin",0);
   }
 
-  mouse_accel();
   terrain_survol();
   timeFormat();
 
