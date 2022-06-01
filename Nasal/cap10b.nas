@@ -188,7 +188,6 @@ global_system = func{
 
   terrain_survol();
   timeFormat();
-  cap10b.physics();
 
   settimer(global_system, 0);
 
