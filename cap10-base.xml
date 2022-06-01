@@ -131,10 +131,6 @@
 			<selected-tank type="int">0</selected-tank>
 			<selected-tank-pos type="double">0</selected-tank-pos>
 		</fuel>
-		<flight>
-			<aileron-trim>0.023</aileron-trim>
-			<rudder-trim>0.012</rudder-trim>
-		</flight>
 		<switches>
 			<ai-switch type="bool">0</ai-switch>
 			<hi-switch type="bool">0</hi-switch>
@@ -247,9 +243,11 @@
 						<value>0</value>
 					</binding>
 				</mod-up>
-				<mod-alt>
-					<name>Alt-S</name>
-					<desc>Cycle smoke color</desc>
+			</key>
+			<key n="15">
+				<name>Ctrl-o</name>
+				<desc>Cycle smoke color</desc>
+				<binding>
 					<command>nasal</command>
 					<script><![CDATA[
 						var newColor = props.globals.getValue("/controls/switches/smoke-color") + 1;
@@ -259,7 +257,7 @@
 						props.globals.setValue("/controls/switches/smoke-color", newColor);
 						gui.popupTip("New smoke color: " ~ cap10b.decodeSmokeColor(props.globals));
 					]]></script>
-				</mod-alt>
+				</binding>
 			</key>
 		</keyboard>
 	</input>
