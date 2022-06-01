@@ -172,7 +172,6 @@
 		<!-- ######## DUAL CONTROL ######### -->
 		<!-- ############################### -->
 		<cap10b>
-			<file>Nasal/physics.nas</file>
 			<file>Nasal/cap10b.nas</file>
 			<file>Nasal/smoke.nas</file>
 		</cap10b>

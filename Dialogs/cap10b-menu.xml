@@ -53,6 +53,14 @@
           </script>
         </binding>
       </item>
+      <item>
+        <label>Repair damage</label>
+        <binding>
+          <command>property-assign</command>
+          <property>/fdm/jsbsim/repair-damage</property>
+          <value>1</value>
+        </binding>
+      </item>
     </menu>
   </default>
 
