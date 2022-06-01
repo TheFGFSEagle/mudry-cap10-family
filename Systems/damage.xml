@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <system name="system">
-	<property value="0">repair-damage</property>
+	<!-- Set to 1 at startup so that the gear doesn't break then -->
+	<property value="1">repair-damage</property>
 	
 	<channel name="gear">
 		<switch name="gear/unit[0]/broken">
@@ -53,10 +54,8 @@
 	
 	<channel name="reset-repair-damage">
 		<switch name="repair-damage">
-			<default value="0"/>
-			<test value="0" logic="OR">
-				repair-damage EQ 1
-				sim-time-sec LT 1
+			<test value="0" logic="AND">
+				sim-time-sec GT 1
 			</test>
 		</switch>
 	</channel>

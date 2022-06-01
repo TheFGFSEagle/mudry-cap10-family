@@ -60,10 +60,10 @@
           <property>/fdm/jsbsim/repair-damage</property>
           <value>1</value>
         </binding>
-        <binding>
+        <!--<binding>
           <command>nasal</command>
           <script>interpolate("/fdm/jsbsim/repair-damage", 1, 0);</script>
-        </binding>  
+        </binding>-->
       </item>
     </menu>
   </default>
