@@ -30,7 +30,7 @@ var smokeColors = [
 ];
 
 var decodeSmokeColor = func (rootNode) {
-	var color = rootNode.getValue("controls/switches/smoke-color") + 1;
+	var color = rootNode.getValue("controls/switches/smoke-color");
 	rootNode.setValue("sim/model/smoke/red", smokeColors[color]["rgb"][0] * 0.8);
 	rootNode.setValue("sim/model/smoke/green", smokeColors[color]["rgb"][1] * 0.8);
 	rootNode.setValue("sim/model/smoke/blue", smokeColors[color]["rgb"][2] * 0.8);
