@@ -251,7 +251,7 @@
 					<command>nasal</command>
 					<script><![CDATA[
 						var newColor = props.globals.getValue("/controls/switches/smoke-color") + 1;
-						if (newColor > size(cap10b.smokeColors)) {
+						if (newColor >= size(cap10b.smokeColors)) {
 							var newColor = 0;
 						}
 						props.globals.setValue("/controls/switches/smoke-color", newColor);

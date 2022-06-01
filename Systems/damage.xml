@@ -5,11 +5,11 @@
 	<channel name="gear">
 		<switch name="gear/unit[0]/broken">
 			<default value="gear/unit[0]/broken"/>
-			<test value="1">
-				gear/unit[0]/compression-ft GT 0.6
-			</test>
 			<test value="0">
 				repair-damage EQ 1
+			</test>
+			<test value="1">
+				gear/unit[0]/compression-ft GT 0.6
 			</test>
 		</switch>
 		<switch name="gear/unit[0]/z-position">
@@ -21,11 +21,11 @@
 		
 		<switch name="gear/unit[1]/broken">
 			<default value="gear/unit[1]/broken"/>
-			<test value="1">
-				gear/unit[1]/compression-ft GT 0.6
-			</test>
 			<test value="0">
 				repair-damage EQ 1
+			</test>
+			<test value="1">
+				gear/unit[1]/compression-ft GT 0.6
 			</test>
 		</switch>
 		<switch name="gear/unit[1]/z-position">
@@ -36,11 +36,11 @@
 		</switch>
 		<switch name="gear/unit[2]/broken">
 			<default value="gear/unit[2]/broken"/>
-			<test value="1">
-				gear/unit[2]/compression-ft GT 0.6
-			</test>
 			<test value="0">
 				repair-damage EQ 1
+			</test>
+			<test value="1">
+				gear/unit[2]/compression-ft GT 0.6
 			</test>
 		</switch>
 		<switch name="gear/unit[2]/z-position">
@@ -49,11 +49,14 @@
 				gear/unit[2]/broken EQ 1
 			</test>
 		</switch>
-		
+	</channel>
+	
+	<channel name="reset-repair-damage">
 		<switch name="repair-damage">
-			<default value="repair-damage"/>
-			<test value="0">
+			<default value="0"/>
+			<test value="0" logic="OR">
 				repair-damage EQ 1
+				sim-time-sec LT 1
 			</test>
 		</switch>
 	</channel>

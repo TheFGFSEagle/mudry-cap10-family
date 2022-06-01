@@ -52,11 +52,19 @@
 				<value>10</value>
 				<spread>2.5</spread>
 			</speed-mps>
+			<rotation-speed>
+				<x-min-deg-sec>5</x-min-deg-sec>
+				<y-min-deg-sec>5</y-min-deg-sec>
+				<z-min-deg-sec>5</z-min-deg-sec>
+				<x-max-deg-sec>30</x-max-deg-sec>
+				<y-max-deg-sec>30</y-max-deg-sec>
+				<z-max-deg-sec>30</z-max-deg-sec>
+			</rotation-speed>
 		</shooter>
 		
 		<counter>
 			<particles-per-sec>
-				<value>30</value>
+				<value>50</value>
 				<spread>1</spread>
 			</particles-per-sec>
 		</counter>
@@ -124,6 +132,14 @@
 				<value>10</value>
 				<spread>2.5</spread>
 			</speed-mps>
+			<rotation-speed>
+				<x-min-deg-sec>5</x-min-deg-sec>
+				<y-min-deg-sec>5</y-min-deg-sec>
+				<z-min-deg-sec>5</z-min-deg-sec>
+				<x-max-deg-sec>30</x-max-deg-sec>
+				<y-max-deg-sec>30</y-max-deg-sec>
+				<z-max-deg-sec>30</z-max-deg-sec>
+			</rotation-speed>
 		</shooter>
 		
 		<counter>
