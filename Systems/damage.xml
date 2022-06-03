@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <system name="system">
-	<!-- Set to 1 at startup so that the gear doesn't break then -->
-	<property value="1">repair-damage</property>
+	<property>repair-damage</property>
 	
 	<channel name="gear">
 		<switch name="gear/unit[0]/broken">
@@ -52,11 +51,36 @@
 		</switch>
 	</channel>
 	
-	<channel name="reset-repair-damage">
-		<switch name="repair-damage">
-			<test value="0" logic="AND">
-				sim-time-sec GT 1
+	
+	<channel name="reset-repair">
+		<fcs_function>
+			<function>
+				<ifthen>
+					<property>repair-damage</property>
+					<sum>
+						<property>repair-timer</property>
+						<property>simulation/channel-dt</property>
+					</sum>
+					<value>0</value>
+				</ifthen>
+			</function>
+			<clipto>
+				<min>0</min>
+				<max>1</max>
+			</clipto>
+			<output>repair-timer</output>
+		</fcs_function>
+		
+		<switch>
+			<default value="0"/>
+			<test value="1" logic="OR">
+				<test value="1" logic="AND">
+					repair-damage EQ 1
+					repair-timer LT 1
+				</test>
+				sim-time-sec LT 1
 			</test>
+			<output>repair-damage</output>
 		</switch>
 	</channel>
 </system>
