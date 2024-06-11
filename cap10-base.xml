@@ -76,7 +76,7 @@
 				<desc>Start/stop   smoke</desc>
 			</key>
 			<key>
-				<name>Alt-S</name>
+				<name>Ctrl+o</name>
 				<desc>Cycle smoke color</desc>
 			</key>
 			<line/>
