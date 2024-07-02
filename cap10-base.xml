@@ -248,11 +248,14 @@
 				<name>Ctrl-o</name>
 				<desc>Cycle smoke color</desc>
 				<binding>
-					<command>property-adjust</command>
-					<property>/controls/switches/smoke-color</property>
-					<min>0</min>
-					<max>7</max>
-					<wrap type="bool">true</wrap>
+					<command>nasal</command>
+					<script><![CDATA[
+						var newColor = props.globals.getValue("/controls/switches/smoke-color") + 1;
+						if (newColor >= size(cap10b.smokeColors)) {
+							var newColor = 0;
+						}
+						props.globals.setValue("/controls/switches/smoke-color", newColor);
+					]]></script>
 				</binding>
 			</key>
 		</keyboard>
