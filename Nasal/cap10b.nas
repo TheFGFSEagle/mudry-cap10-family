@@ -76,9 +76,9 @@ var terrain_survol = func {
 
   if(!getprop("sim/freeze/replay-state") and !getprop("/environment/terrain-type") and getprop("/position/altitude-agl-ft") < 3.0){
     setprop("sim/messages/copilot", "You are on water !");
-    setprop("sim/freeze/clock", 1);
-    setprop("sim/freeze/master", 1);
-    setprop("sim/crashed", 1);
+    #setprop("sim/freeze/clock", 1);
+    #setprop("sim/freeze/master", 1);
+    #setprop("sim/crashed", 1);
   }
 #  settimer(terrain_survol, 0);
 }
@@ -196,19 +196,20 @@ global_system = func{
 ############################################
 # Upside down system
 ############################################
-var timeOfNegatifG = 0;
+var timeOfNegativeG = 0;
 upsideDown_system = func{
 
   if(getprop("fdm/jsbsim/accelerations/Nz") < -0.5){
-    timeOfNegatifG += 1;
-    if(timeOfNegatifG > 4){
+    timeOfNegativeG += 1;
+    if(timeOfNegativeG > 4){
       if(getprop("fdm/jsbsim/propulsion/tank[1]/priority") > getprop("fdm/jsbsim/propulsion/tank[0]/priority")){
         setprop("fdm/jsbsim/propulsion/tank[1]/priority", 0);
       }
-      timeOfNegatifG = 0;
+      timeOfNegativeG = 0;
     }
   }else{
-    timeOfNegatifG = 0;
+    timeOfNegativeG = 0;
+    setprop("fdm/jsbsim/propulsion/tank[1]/priority", 1);
   }
   settimer(upsideDown_system, 1);
 }
@@ -233,7 +234,7 @@ setlistener("/sim/signals/fdm-initialized", func{
 
   if(getprop("sim/rendering/rembrandt/enabled") == nil){
     props.globals.initNode("sim/rendering/rembrandt/enabled", 0, "BOOL");
-    print("Rembrandt no available");
+    print("Rembrandt not available");
   }
 
 });
@@ -243,3 +244,8 @@ var nasalInit = setlistener("/sim/signals/fdm-initialized", func{
   settimer(upsideDown_system, 2);
   removelistener(nasalInit);
 });
+
+smoke_color_listener = setlistener("/controls/switches/smoke-color", func {
+  gui.popupTip("New smoke color: " ~ cap10b.decodeSmokeColor(props.globals));
+});
+
