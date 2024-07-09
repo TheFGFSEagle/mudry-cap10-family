@@ -223,10 +223,12 @@
 			<key n="83">
 				<name>S</name>
 				<desc>Start/stop smoke</desc>
-				<binding>
-					<command>property-toggle</command>
-					<property>controls/switches/smoke</property>
-				</binding>
+				<mod-shift>
+					<binding>
+						<command>property-toggle</command>
+						<property>controls/switches/smoke</property>
+					</binding>
+				</mod-shift>
 			</key>
 			<key n="115">
 				<name>s</name>
