@@ -33,10 +33,10 @@
 			
 			var rplayer = cmdarg();
 			rplayer.getNode("controls/switches/smoke-color", 1).alias(rplayer.getNode("sim/multiplay/generic/int[7]", 1));
-			copilotSmokeColorListener = setlistener(rplayer.getNode("controls/switches/smoke-color"), func { cap10b.decodeSmokeColor(rplayer) });
+			smokeColorListener = setlistener(rplayer.getNode("sim/multiplay/generic/int[7]"), func { cap10b.decodeSmokeColor(rplayer) });
 		</load>
 		<unload>
-			removelistener(copilotSmokeColorListener);
+			removelistener(smokeColorListener);
 			livery_update.stop();
 		</unload>
 	</nasal>
