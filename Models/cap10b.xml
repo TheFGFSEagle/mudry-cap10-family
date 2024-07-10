@@ -30,7 +30,6 @@
 	<nasal>
 		<load>
 			var livery_update = aircraft.livery_update.new("Aircraft/mudry-cap10-family/Models/Liveries", 10);
-			io.load_nasal("Aircraft/mudry-cap10-family/Nasal/smoke.nas", "cap10b");
 			
 			var rplayer = cmdarg();
 			rplayer.getNode("controls/switches/smoke-color", 1).alias(rplayer.getNode("sim/multiplay/generic/int[7]", 1));
