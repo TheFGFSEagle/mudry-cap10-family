@@ -433,7 +433,7 @@
 
  <propulsion>
 
-  <engine file="eng_LycomingIO360B2F">
+  <engine file="Lycoming-AEIO-360-B2F">
     <location unit="M">
       <x> -1.2 </x>
       <y>  0.00 </y>
