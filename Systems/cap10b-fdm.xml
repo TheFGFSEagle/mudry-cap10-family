@@ -491,6 +491,12 @@
   <system file="damage"/>
 
  <flight_control name="FCS: mudry-cap10b">
+  <channel name="Engine">
+    <pure_gain name="propulsion/engine[0]/blade-angle">
+      <input>/controls/engines/engine[0]/thrust-boost</input>
+      <gain>1</gain>
+    </pure_gain>
+  </channel>
 
   <channel name="Pitch">
   <summer name="Pitch Trim Sum">

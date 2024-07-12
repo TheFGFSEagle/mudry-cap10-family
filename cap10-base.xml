@@ -125,6 +125,7 @@
 		<engines>
 			<engine n="0">
 				<starter_cmd type="bool">0</starter_cmd>
+				<thrust-boost type="bool">false</thrust-boost>
 			</engine>
 		</engines>
 		<fuel>
@@ -229,6 +230,16 @@
 						<property>controls/switches/smoke</property>
 					</binding>
 				</mod-shift>
+			</key>
+			<key n="2">
+				<name>Ctrl-b</name>
+				<mod-ctrl>
+					<desc>Toggle thrust boost</desc>
+					<binding>
+						<command>property-toggle</command>
+						<property>/controls/engines/engine[0]/thrust-boost</property>
+					</binding>
+				</mod-ctrl>
 			</key>
 			<key n="115">
 				<name>s</name>
