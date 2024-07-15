@@ -241,6 +241,15 @@
 					</binding>
 				</mod-ctrl>
 			</key>
+			<key n="114">
+				<name>r</name>
+				<desc>Repair aircraft</desc>
+				<binding>
+					<command>property-assign</command>
+					<property>/fdm/jsbsim/repair-damage</property>
+					<value>1</value>
+				</binding>
+			</key>
 			<key n="115">
 				<name>s</name>
 				<desc>Starter</desc>
